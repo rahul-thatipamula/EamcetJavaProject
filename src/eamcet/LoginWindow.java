@@ -58,6 +58,11 @@ public class LoginWindow extends javax.swing.JFrame {
         setTitle("Login");
         setExtendedState(JFrame.MAXIMIZED_BOTH);
         setSize(new java.awt.Dimension(2147483647, 2147483647));
+        addWindowListener(new java.awt.event.WindowAdapter() {
+            public void windowOpened(java.awt.event.WindowEvent evt) {
+                formWindowOpened(evt);
+            }
+        });
 
         logoPanel.setBackground(new java.awt.Color(255, 255, 255));
 
@@ -465,6 +470,11 @@ public class LoginWindow extends javax.swing.JFrame {
     private void emailFieldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_emailFieldActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_emailFieldActionPerformed
+
+    private void formWindowOpened(java.awt.event.WindowEvent evt) {//GEN-FIRST:event_formWindowOpened
+        // TODO add your handling code here:
+        setExtendedState(JFrame.MAXIMIZED_BOTH);
+    }//GEN-LAST:event_formWindowOpened
 
     
    

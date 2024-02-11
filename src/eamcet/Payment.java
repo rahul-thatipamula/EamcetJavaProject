@@ -5,6 +5,10 @@
 package eamcet;
 
 import java.awt.CardLayout;
+import java.util.Enumeration;
+import javax.swing.AbstractButton;
+import javax.swing.ButtonGroup;
+import javax.swing.ButtonModel;
 import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 import javax.swing.JRadioButton;
@@ -31,6 +35,10 @@ public class Payment extends javax.swing.JPanel {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        qualifyExam = new javax.swing.ButtonGroup();
+        categoryPayment = new javax.swing.ButtonGroup();
+        ph = new javax.swing.ButtonGroup();
+        streamAppliedFor = new javax.swing.ButtonGroup();
         home1scroll = new javax.swing.JScrollPane();
         stepsToPayment = new javax.swing.JLayeredPane();
         heading = new javax.swing.JLabel();
@@ -168,6 +176,7 @@ public class Payment extends javax.swing.JPanel {
         paymentMethod.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         stepsToPayment.add(paymentMethod, new org.netbeans.lib.awtextra.AbsoluteConstraints(6, 589, 458, 24));
 
+        qualifyExam.add(bpc);
         bpc.setText("BPC");
         bpc.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -176,6 +185,7 @@ public class Payment extends javax.swing.JPanel {
         });
         stepsToPayment.add(bpc, new org.netbeans.lib.awtextra.AbsoluteConstraints(661, 84, 98, -1));
 
+        qualifyExam.add(mpc);
         mpc.setText("MPC");
         mpc.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -184,6 +194,7 @@ public class Payment extends javax.swing.JPanel {
         });
         stepsToPayment.add(mpc, new org.netbeans.lib.awtextra.AbsoluteConstraints(557, 84, 98, -1));
 
+        qualifyExam.add(diploma);
         diploma.setText("DIPLOMA");
         diploma.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -192,10 +203,12 @@ public class Payment extends javax.swing.JPanel {
         });
         stepsToPayment.add(diploma, new org.netbeans.lib.awtextra.AbsoluteConstraints(765, 84, 98, -1));
 
+        qualifyExam.add(mbpc);
         mbpc.setText("MBPC");
         stepsToPayment.add(mbpc, new org.netbeans.lib.awtextra.AbsoluteConstraints(869, 84, 98, -1));
 
         boardNameField.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "SSC", "CBSE" }));
+        boardNameField.setSelectedItem(null);
         boardNameField.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 boardNameFieldActionPerformed(evt);
@@ -209,6 +222,7 @@ public class Payment extends javax.swing.JPanel {
         stepsToPayment.add(altNumberField, new org.netbeans.lib.awtextra.AbsoluteConstraints(555, 311, 349, -1));
         stepsToPayment.add(emailField, new org.netbeans.lib.awtextra.AbsoluteConstraints(555, 347, 349, -1));
 
+        categoryPayment.add(oc);
         oc.setText("OC");
         oc.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -217,9 +231,11 @@ public class Payment extends javax.swing.JPanel {
         });
         stepsToPayment.add(oc, new org.netbeans.lib.awtextra.AbsoluteConstraints(555, 378, 56, -1));
 
+        categoryPayment.add(bcb);
         bcb.setText("BC_B");
         stepsToPayment.add(bcb, new org.netbeans.lib.awtextra.AbsoluteConstraints(681, 378, 57, -1));
 
+        categoryPayment.add(bcc);
         bcc.setText("BC_C");
         bcc.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -228,24 +244,31 @@ public class Payment extends javax.swing.JPanel {
         });
         stepsToPayment.add(bcc, new org.netbeans.lib.awtextra.AbsoluteConstraints(744, 378, -1, -1));
 
+        categoryPayment.add(bca);
         bca.setText("BC_A");
         stepsToPayment.add(bca, new org.netbeans.lib.awtextra.AbsoluteConstraints(613, 378, 62, -1));
 
+        categoryPayment.add(bce);
         bce.setText("BC_E");
         stepsToPayment.add(bce, new org.netbeans.lib.awtextra.AbsoluteConstraints(856, 378, -1, -1));
 
+        categoryPayment.add(bcd);
         bcd.setText("BC_D");
         stepsToPayment.add(bcd, new org.netbeans.lib.awtextra.AbsoluteConstraints(799, 378, -1, -1));
 
+        categoryPayment.add(sc);
         sc.setText("SC");
         stepsToPayment.add(sc, new org.netbeans.lib.awtextra.AbsoluteConstraints(911, 378, -1, -1));
 
+        categoryPayment.add(st);
         st.setText("ST");
         stepsToPayment.add(st, new org.netbeans.lib.awtextra.AbsoluteConstraints(954, 378, -1, -1));
 
+        ph.add(phYes);
         phYes.setText("YES");
         stepsToPayment.add(phYes, new org.netbeans.lib.awtextra.AbsoluteConstraints(555, 414, 56, -1));
 
+        ph.add(phNo);
         phNo.setText("NO");
         stepsToPayment.add(phNo, new org.netbeans.lib.awtextra.AbsoluteConstraints(613, 414, -1, -1));
 
@@ -256,12 +279,20 @@ public class Payment extends javax.swing.JPanel {
         });
         stepsToPayment.add(certificate, new org.netbeans.lib.awtextra.AbsoluteConstraints(555, 451, 349, -1));
 
+        streamAppliedFor.add(agriMedical);
         agriMedical.setText("AGRICULTURE & MEDICAL(AM)");
+        agriMedical.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                agriMedicalActionPerformed(evt);
+            }
+        });
         stepsToPayment.add(agriMedical, new org.netbeans.lib.awtextra.AbsoluteConstraints(555, 517, 206, -1));
 
+        streamAppliedFor.add(engineering);
         engineering.setText("ENGINEERING(E)");
         stepsToPayment.add(engineering, new org.netbeans.lib.awtextra.AbsoluteConstraints(555, 490, 146, -1));
 
+        streamAppliedFor.add(bothEngAgri);
         bothEngAgri.setText("BOTH (ENGINEERING & AGRICULTURE & MEDICAL)(AM)");
         stepsToPayment.add(bothEngAgri, new org.netbeans.lib.awtextra.AbsoluteConstraints(555, 544, 349, 33));
 
@@ -387,24 +418,28 @@ public class Payment extends javax.swing.JPanel {
 
     private void submitActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_submitActionPerformed
         // TODO add your handling code here:
-        String [] values = {"Proceed","Later","cancel"};
+        Object [] values = {"continue"};
         if(finalFeeSubmitButon()){
-
-            int val = JOptionPane.showOptionDialog(null, "Fee payment successful\nClick Proceed to fill the form","Permission",JOptionPane.YES_NO_CANCEL_OPTION, JOptionPane.INFORMATION_MESSAGE,null, values,null);
-            if(val ==2){
-                new FillOnlineApplication();
-            }
-            else if(val ==1){
-                System.out.println(val);
-            }
             new FeePaymentDatabase(data);
-
+            int val = JOptionPane.showOptionDialog(home2scroll, "Fee payment successful\nClick Proceed to fill the form","Permission",JOptionPane.YES_OPTION, JOptionPane.INFORMATION_MESSAGE,null, values,null);
+            if(val ==0){
+               
+    CardLayout cl = (CardLayout) aw.appInterface.getLayout();
+            aw.appInterface.remove(this);
+            aw.appInterface.add(aw.registrationPanel);
+            aw.appInterface.repaint();
+            aw.appInterface.revalidate();
+            }
         }
         else{
             JOptionPane.showMessageDialog(null,"Please enter the details","Error",JOptionPane.ERROR_MESSAGE);
         }
     }//GEN-LAST:event_submitActionPerformed
 
+    AdminWindow awf = null;
+    public void adminWindowReference(AdminWindow awf){
+        this.awf= awf;
+    }
     private void upiIdField1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_upiIdField1ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_upiIdField1ActionPerformed
@@ -414,13 +449,27 @@ public class Payment extends javax.swing.JPanel {
     }//GEN-LAST:event_stepsToPaymentMouseWheelMoved
 
     private void backActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_backActionPerformed
-        CardLayout cl = (CardLayout) aw.appInterface.getLayout();
-        aw.appInterface.remove(this);
-        aw.appInterface.add(aw.registrationPanel);
-        aw.appInterface.repaint();
-        aw.appInterface.revalidate();
-    }//GEN-LAST:event_backActionPerformed
 
+        Object[] options = {"Back","Proceed TO fill Form"};
+     
+        
+         int choosenOption = JOptionPane.showOptionDialog(null,"You are in the middle of Filling Form","Warning!!",JOptionPane.YES_NO_OPTION,JOptionPane.WARNING_MESSAGE,null,options,null);
+         if(choosenOption ==0){
+            CardLayout cl = (CardLayout) aw.appInterface.getLayout();
+            aw.appInterface.remove(this);
+            aw.appInterface.add(aw.registrationPanel);
+            aw.appInterface.repaint();
+            aw.appInterface.revalidate();
+         }
+         else if(choosenOption==1){
+             JOptionPane.getRootFrame().dispose();
+         }
+         
+         
+        
+  
+    }//GEN-LAST:event_backActionPerformed
+    
     private void upiActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_upiActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_upiActionPerformed
@@ -466,6 +515,10 @@ public class Payment extends javax.swing.JPanel {
     private void bpcActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bpcActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_bpcActionPerformed
+
+    private void agriMedicalActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_agriMedicalActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_agriMedicalActionPerformed
 AdminWindow aw = null;
  public void passRef(AdminWindow aw){
      this.aw = aw;
@@ -474,27 +527,39 @@ AdminWindow aw = null;
      String data[] = new String[16];
     
    
-    
-    private void setQualifyExam1(JRadioButton radioButton) {
-        if (radioButton.isSelected()) {
-            data[1] = radioButton.getText();
-        }
-    }
-     private void setQualifyExam2(JRadioButton radioButton) {
-        if (radioButton.isSelected()) {
-            data[1] = radioButton.getText();
-        }
-    }
-      private void setQualifyExam3(JRadioButton radioButton) {
-        if (radioButton.isSelected()) {
-            data[1] = radioButton.getText();
-        }
-    }
-    private void setQualifyExam4(JRadioButton radioButton) {
-        if (radioButton.isSelected()) {
-            data[1] = radioButton.getText();
-        }
-    }
+//    
+//    private void setQualifyExam1(JRadioButton radioButton) {
+//        if (radioButton.isSelected()) {
+//            data[1] = radioButton.getText();
+//        }
+//    }
+//     private void setQualifyExam2(JRadioButton radioButton) {
+//        if (radioButton.isSelected()) {
+//            data[1] = radioButton.getText();
+//        }
+//    }
+//      private void setQualifyExam3(JRadioButton radioButton) {
+//        if (radioButton.isSelected()) {
+//            data[1] = radioButton.getText();
+//        }
+//    }
+//    private void setQualifyExam4(JRadioButton radioButton) {
+//        if (radioButton.isSelected()) {
+//            data[1] = radioButton.getText();
+//        }
+//    }
+     
+     
+     private void setQualifyExam(ButtonGroup bg ){
+        Enumeration<AbstractButton> buttons = bg.getElements();
+                while (buttons.hasMoreElements()) {
+                    AbstractButton button = buttons.nextElement();
+                    if (button.isSelected()) {
+                        data[1] = button.getText();
+                        break;
+                    }
+                }
+     }
        
     public void setBoard(){
         data[2] = (String)boardNameField.getSelectedItem();
@@ -518,45 +583,18 @@ AdminWindow aw = null;
      public void setEmail(){
         data[7] = emailField.getText();
     }
-      private void setCategory1(JRadioButton radioButton) {
-        if (radioButton.isSelected()) {
-            data[8] = radioButton.getText();
-        }
-    }
-       private void setCategory2(JRadioButton radioButton) {
-        if (radioButton.isSelected()) {
-            data[8] = radioButton.getText();
-        }
-    } private void setCategory3(JRadioButton radioButton) {
-        if (radioButton.isSelected()) {
-            data[8] = radioButton.getText();
-        }
-    }
-     private void setCategory4(JRadioButton radioButton) {
-        if (radioButton.isSelected()) {
-            data[8] = radioButton.getText();
-        }
-    }
-      private void setCategory5(JRadioButton radioButton) {
-        if (radioButton.isSelected()) {
-            data[8] = radioButton.getText();
-        }
-    }
-       private void setCategory6(JRadioButton radioButton) {
-        if (radioButton.isSelected()) {
-            data[8] = radioButton.getText();
-        }
-    }
-        private void setCategory7(JRadioButton radioButton) {
-        if (radioButton.isSelected()) {
-            data[8] = radioButton.getText();
-        }
-    }
-    private void setCategory8(JRadioButton radioButton) {
-        if (radioButton.isSelected()) {
-            data[8] = radioButton.getText();
-        }
-    }
+    
+     public void setCategory(ButtonGroup bg){
+         Enumeration<AbstractButton> em = bg.getElements();
+         while(em.hasMoreElements()){
+             AbstractButton ab = em.nextElement();
+             if(ab.isSelected()){
+                 data[8] = ab.getText();
+                 break;
+             }
+         }
+         
+     }
     
        
       
@@ -616,13 +654,8 @@ AdminWindow aw = null;
             
         }
    
-        
-        
-        public boolean proceedButton(){
-                setQualifyExam1(mpc);
-                setQualifyExam2(bpc);
-                setQualifyExam3(diploma);
-                setQualifyExam4(mbpc);
+        public void setDataOfForm(){
+             setQualifyExam(qualifyExam);
             setBoard();
             setHallticket();
             
@@ -631,14 +664,7 @@ AdminWindow aw = null;
             setStudentMobileNumber();
             setAltMobileNumber();
             setEmail();
-            setCategory1(oc);
-            setCategory2(bca);
-            setCategory3(bcb);
-            setCategory4(bcc);
-            setCategory5(bcd);
-            setCategory6(bce);
-            setCategory7(sc);
-            setCategory8(st);
+            setCategory(categoryPayment);
             setPh1(phYes);
             setPh2(phNo);
             setCertificate();
@@ -647,6 +673,10 @@ AdminWindow aw = null;
             setStream3(agriMedical);
             setPassword();
            setPaymentType();
+        }
+        
+        public boolean proceedButton(){
+           setDataOfForm();
           
             boolean temp = true;
             for(int i =0;i<13;i++){
@@ -674,6 +704,7 @@ AdminWindow aw = null;
     private javax.swing.JRadioButton bothEngAgri;
     private javax.swing.JRadioButton bpc;
     private javax.swing.JLabel category;
+    private javax.swing.ButtonGroup categoryPayment;
     private javax.swing.JTextField certificate;
     private javax.swing.JLabel certificateNumber;
     private javax.swing.JLabel dateOfBirth;
@@ -695,9 +726,11 @@ AdminWindow aw = null;
     private javax.swing.JButton payFee;
     private javax.swing.JLayeredPane payingFeeLayer1;
     private javax.swing.JLabel paymentMethod;
+    private javax.swing.ButtonGroup ph;
     private javax.swing.JRadioButton phNo;
     private javax.swing.JRadioButton phYes;
     private javax.swing.JLabel physicallyHandicapped;
+    private javax.swing.ButtonGroup qualifyExam;
     private javax.swing.JTextField referenceNumberField1;
     private javax.swing.JLabel referenceNumberLabel1;
     private javax.swing.JRadioButton sc;
@@ -706,6 +739,7 @@ AdminWindow aw = null;
     private javax.swing.JRadioButton st;
     private javax.swing.JLayeredPane stepsToPayment;
     private javax.swing.JLabel streamApplied;
+    private javax.swing.ButtonGroup streamAppliedFor;
     private javax.swing.JLabel studentName;
     private javax.swing.JTextField studentNameField;
     private javax.swing.JLabel studentNumber;

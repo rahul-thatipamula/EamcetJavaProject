@@ -66,6 +66,11 @@ public class AdminWindow extends javax.swing.JFrame {
         exit = new javax.swing.JMenuItem();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        addWindowListener(new java.awt.event.WindowAdapter() {
+            public void windowOpened(java.awt.event.WindowEvent evt) {
+                formWindowOpened(evt);
+            }
+        });
 
         appInterface.setLayout(new java.awt.CardLayout());
 
@@ -432,6 +437,11 @@ public class AdminWindow extends javax.swing.JFrame {
         appInterface.repaint();
         appInterface.revalidate();
     }//GEN-LAST:event_printApplicationActionPerformed
+
+    private void formWindowOpened(java.awt.event.WindowEvent evt) {//GEN-FIRST:event_formWindowOpened
+        // TODO add your handling code here:
+        setExtendedState(JFrame.MAXIMIZED_BOTH);
+    }//GEN-LAST:event_formWindowOpened
 
     /**
      * @param args the command line arguments
