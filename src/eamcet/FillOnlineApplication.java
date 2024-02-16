@@ -46,6 +46,8 @@ public class FillOnlineApplication extends javax.swing.JFrame {
         testMedium = new javax.swing.ButtonGroup();
         sscArea = new javax.swing.ButtonGroup();
         localArea = new javax.swing.ButtonGroup();
+        specialReservation = new javax.swing.ButtonGroup();
+        ph = new javax.swing.ButtonGroup();
         FillDetails = new javax.swing.JPanel();
         checkDetails = new javax.swing.JPanel();
         backButton = new javax.swing.JButton();
@@ -117,82 +119,82 @@ public class FillOnlineApplication extends javax.swing.JFrame {
         jLabel25 = new javax.swing.JLabel();
         jRadioButton6 = new javax.swing.JRadioButton();
         jRadioButton7 = new javax.swing.JRadioButton();
-        jTextField13 = new javax.swing.JTextField();
+        sadaramNumberField = new javax.swing.JTextField();
         jLabel159 = new javax.swing.JLabel();
         minorityOrNonMinority = new javax.swing.JPanel();
         jLabel26 = new javax.swing.JLabel();
-        jRadioButton8 = new javax.swing.JRadioButton();
-        jRadioButton9 = new javax.swing.JRadioButton();
+        minorityRadio = new javax.swing.JRadioButton();
+        nonMinorityRadio = new javax.swing.JRadioButton();
         incomeRange = new javax.swing.JPanel();
         jLabel27 = new javax.swing.JLabel();
         jRadioButton10 = new javax.swing.JRadioButton();
         jRadioButton11 = new javax.swing.JRadioButton();
         jRadioButton12 = new javax.swing.JRadioButton();
         jLabel28 = new javax.swing.JLabel();
-        jTextField14 = new javax.swing.JTextField();
+        incomeCertificateField = new javax.swing.JTextField();
         bankDetails = new javax.swing.JPanel();
         jLabel29 = new javax.swing.JLabel();
         jLabel30 = new javax.swing.JLabel();
-        jTextField15 = new javax.swing.JTextField();
+        bankAccountNameField = new javax.swing.JTextField();
         jLabel31 = new javax.swing.JLabel();
-        jTextField16 = new javax.swing.JTextField();
+        accountNumberField = new javax.swing.JTextField();
         jLabel32 = new javax.swing.JLabel();
-        jTextField17 = new javax.swing.JTextField();
+        ifscCodeField = new javax.swing.JTextField();
         placeOfStudy = new javax.swing.JPanel();
         jLabel58 = new javax.swing.JLabel();
-        jComboBox4 = new javax.swing.JComboBox<>();
+        class1 = new javax.swing.JComboBox<>();
         jLabel59 = new javax.swing.JLabel();
         jLabel60 = new javax.swing.JLabel();
-        jComboBox5 = new javax.swing.JComboBox<>();
+        class2 = new javax.swing.JComboBox<>();
         jLabel61 = new javax.swing.JLabel();
-        jComboBox6 = new javax.swing.JComboBox<>();
+        class3 = new javax.swing.JComboBox<>();
         jLabel62 = new javax.swing.JLabel();
-        jComboBox7 = new javax.swing.JComboBox<>();
+        class4 = new javax.swing.JComboBox<>();
         jLabel63 = new javax.swing.JLabel();
-        jComboBox8 = new javax.swing.JComboBox<>();
+        class5 = new javax.swing.JComboBox<>();
         jLabel64 = new javax.swing.JLabel();
-        jComboBox9 = new javax.swing.JComboBox<>();
+        class6 = new javax.swing.JComboBox<>();
         jLabel65 = new javax.swing.JLabel();
-        jComboBox10 = new javax.swing.JComboBox<>();
+        class7 = new javax.swing.JComboBox<>();
         jLabel66 = new javax.swing.JLabel();
-        jComboBox11 = new javax.swing.JComboBox<>();
+        class8 = new javax.swing.JComboBox<>();
         jLabel67 = new javax.swing.JLabel();
-        jComboBox12 = new javax.swing.JComboBox<>();
+        class9 = new javax.swing.JComboBox<>();
         jLabel68 = new javax.swing.JLabel();
-        jComboBox13 = new javax.swing.JComboBox<>();
+        class10 = new javax.swing.JComboBox<>();
         jLabel69 = new javax.swing.JLabel();
-        jComboBox14 = new javax.swing.JComboBox<>();
+        inter1stYear = new javax.swing.JComboBox<>();
         jLabel70 = new javax.swing.JLabel();
-        jComboBox15 = new javax.swing.JComboBox<>();
+        inter2ndYear = new javax.swing.JComboBox<>();
         jLabel71 = new javax.swing.JLabel();
-        jComboBox16 = new javax.swing.JComboBox<>();
+        localAreaField = new javax.swing.JComboBox<>();
         jLabel72 = new javax.swing.JLabel();
-        jRadioButton36 = new javax.swing.JRadioButton();
-        jRadioButton37 = new javax.swing.JRadioButton();
-        jRadioButton38 = new javax.swing.JRadioButton();
-        jRadioButton39 = new javax.swing.JRadioButton();
+        Andhra_University_AU = new javax.swing.JRadioButton();
+        Sri_venkateshwara_university_SVU = new javax.swing.JRadioButton();
+        Others = new javax.swing.JRadioButton();
+        Osmania_University_OU = new javax.swing.JRadioButton();
         address = new javax.swing.JPanel();
         jLabel33 = new javax.swing.JLabel();
         jLabel34 = new javax.swing.JLabel();
-        jTextField18 = new javax.swing.JTextField();
+        houseNumberField = new javax.swing.JTextField();
         jLabel35 = new javax.swing.JLabel();
-        jTextField19 = new javax.swing.JTextField();
+        villageOrStreetField = new javax.swing.JTextField();
         jLabel36 = new javax.swing.JLabel();
-        jTextField20 = new javax.swing.JTextField();
+        mandalOrTownField = new javax.swing.JTextField();
         jLabel37 = new javax.swing.JLabel();
-        jTextField21 = new javax.swing.JTextField();
+        districtField = new javax.swing.JTextField();
         jLabel38 = new javax.swing.JLabel();
-        jTextField22 = new javax.swing.JTextField();
+        stateField = new javax.swing.JTextField();
         jLabel39 = new javax.swing.JLabel();
-        jTextField23 = new javax.swing.JTextField();
+        pincodeField = new javax.swing.JTextField();
         jLabel40 = new javax.swing.JLabel();
-        jTextField24 = new javax.swing.JTextField();
+        mobileNumberField = new javax.swing.JTextField();
         jLabel41 = new javax.swing.JLabel();
-        jTextField25 = new javax.swing.JTextField();
+        altMobileNumberField = new javax.swing.JTextField();
         jLabel42 = new javax.swing.JLabel();
-        jTextField26 = new javax.swing.JTextField();
+        landlineField = new javax.swing.JTextField();
         jLabel43 = new javax.swing.JLabel();
-        jTextField27 = new javax.swing.JTextField();
+        emailField = new javax.swing.JTextField();
         jPanel3 = new javax.swing.JPanel();
         jLabel44 = new javax.swing.JLabel();
         jLabel45 = new javax.swing.JLabel();
@@ -213,12 +215,12 @@ public class FillOnlineApplication extends javax.swing.JFrame {
         jRadioButton25 = new javax.swing.JRadioButton();
         jRadioButton26 = new javax.swing.JRadioButton();
         jLabel48 = new javax.swing.JLabel();
-        jTextField28 = new javax.swing.JTextField();
+        interHallTicketField = new javax.swing.JTextField();
         jLabel49 = new javax.swing.JLabel();
         jLabel50 = new javax.swing.JLabel();
-        jComboBox3 = new javax.swing.JComboBox<>();
+        diplomaStudiedField = new javax.swing.JComboBox<>();
         jLabel51 = new javax.swing.JLabel();
-        jTextField30 = new javax.swing.JTextField();
+        bridgeCourseHallticketField = new javax.swing.JTextField();
         jLabel52 = new javax.swing.JLabel();
         jRadioButton27 = new javax.swing.JRadioButton();
         jRadioButton28 = new javax.swing.JRadioButton();
@@ -228,28 +230,28 @@ public class FillOnlineApplication extends javax.swing.JFrame {
         jRadioButton31 = new javax.swing.JRadioButton();
         jRadioButton32 = new javax.swing.JRadioButton();
         jRadioButton33 = new javax.swing.JRadioButton();
-        jComboBox39 = new javax.swing.JComboBox<>();
+        interYearOfPassingField = new javax.swing.JComboBox<>();
         ssc = new javax.swing.JPanel();
         jLabel54 = new javax.swing.JLabel();
-        jRadioButton34 = new javax.swing.JRadioButton();
-        jRadioButton35 = new javax.swing.JRadioButton();
-        jTextField31 = new javax.swing.JTextField();
+        ssc_urban = new javax.swing.JRadioButton();
+        ssc_rural = new javax.swing.JRadioButton();
+        sscHallTicketField = new javax.swing.JTextField();
         jLabel55 = new javax.swing.JLabel();
-        jTextField32 = new javax.swing.JTextField();
-        jLabel56 = new javax.swing.JLabel();
-        jTextField33 = new javax.swing.JTextField();
-        jLabel57 = new javax.swing.JLabel();
+        sscPassingMonthField = new javax.swing.JTextField();
+        sscPassMonth = new javax.swing.JLabel();
+        sscPassYearField = new javax.swing.JTextField();
+        sscPassYear = new javax.swing.JLabel();
         detailsOfCommanTest = new javax.swing.JPanel();
         jLabel73 = new javax.swing.JLabel();
         jLabel74 = new javax.swing.JLabel();
-        jTextField34 = new javax.swing.JTextField();
+        streamAppliedField = new javax.swing.JTextField();
         jLabel75 = new javax.swing.JLabel();
         jLabel76 = new javax.swing.JLabel();
-        jComboBox17 = new javax.swing.JComboBox<>();
+        zone1 = new javax.swing.JComboBox<>();
         jLabel77 = new javax.swing.JLabel();
-        jComboBox18 = new javax.swing.JComboBox<>();
+        zone2 = new javax.swing.JComboBox<>();
         jLabel78 = new javax.swing.JLabel();
-        jComboBox19 = new javax.swing.JComboBox<>();
+        zone3 = new javax.swing.JComboBox<>();
         photoSignature = new javax.swing.JPanel();
         jLabel79 = new javax.swing.JLabel();
         jLabel80 = new javax.swing.JLabel();
@@ -921,21 +923,26 @@ public class FillOnlineApplication extends javax.swing.JFrame {
         jLabel22.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
         jLabel22.setText("special reservation category");
 
+        specialReservation.add(jCheckBox1);
         jCheckBox1.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
         jCheckBox1.setText("National cadet corp (NCC)");
 
+        specialReservation.add(jCheckBox2);
         jCheckBox2.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
         jCheckBox2.setText("Children of Armed Personnel  (CAP)");
 
+        specialReservation.add(jCheckBox3);
         jCheckBox3.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
         jCheckBox3.setText("Anglo Indian");
 
+        specialReservation.add(jCheckBox4);
         jCheckBox4.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
         jCheckBox4.setText("Sports & Games");
 
         jLabel23.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
         jLabel23.setText("PH(Physically Handicapped)");
 
+        ph.add(jCheckBox5);
         jCheckBox5.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
         jCheckBox5.setText("VH (Visually Hadicapped)");
         jCheckBox5.addActionListener(new java.awt.event.ActionListener() {
@@ -944,9 +951,11 @@ public class FillOnlineApplication extends javax.swing.JFrame {
             }
         });
 
+        ph.add(jCheckBox6);
         jCheckBox6.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
         jCheckBox6.setText("OH (Orthopedically  handicapped)");
 
+        ph.add(jCheckBox7);
         jCheckBox7.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
         jCheckBox7.setText("HI (Hearing Impaired)");
 
@@ -1001,7 +1010,7 @@ public class FillOnlineApplication extends javax.swing.JFrame {
                                 .addGap(70, 70, 70)
                                 .addGroup(specialReservationCategoryLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                                     .addComponent(jLabel159, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                    .addComponent(jTextField13))))))
+                                    .addComponent(sadaramNumberField))))))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         specialReservationCategoryLayout.setVerticalGroup(
@@ -1033,7 +1042,7 @@ public class FillOnlineApplication extends javax.swing.JFrame {
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addGroup(specialReservationCategoryLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(jCheckBox6)
-                            .addComponent(jTextField13, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                            .addComponent(sadaramNumberField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(jLabel159)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
@@ -1042,21 +1051,21 @@ public class FillOnlineApplication extends javax.swing.JFrame {
         jLabel26.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
         jLabel26.setText("Minority / Non minority");
 
-        minority.add(jRadioButton8);
-        jRadioButton8.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
-        jRadioButton8.setText("Non-Minority");
-        jRadioButton8.addActionListener(new java.awt.event.ActionListener() {
+        minority.add(minorityRadio);
+        minorityRadio.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
+        minorityRadio.setText("Non-Minority");
+        minorityRadio.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jRadioButton8ActionPerformed(evt);
+                minorityRadioActionPerformed(evt);
             }
         });
 
-        minority.add(jRadioButton9);
-        jRadioButton9.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
-        jRadioButton9.setText("Minority");
-        jRadioButton9.addActionListener(new java.awt.event.ActionListener() {
+        minority.add(nonMinorityRadio);
+        nonMinorityRadio.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
+        nonMinorityRadio.setText("Minority");
+        nonMinorityRadio.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jRadioButton9ActionPerformed(evt);
+                nonMinorityRadioActionPerformed(evt);
             }
         });
 
@@ -1069,9 +1078,9 @@ public class FillOnlineApplication extends javax.swing.JFrame {
                 .addGroup(minorityOrNonMinorityLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jLabel26, javax.swing.GroupLayout.PREFERRED_SIZE, 244, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addGroup(minorityOrNonMinorityLayout.createSequentialGroup()
-                        .addComponent(jRadioButton9)
+                        .addComponent(nonMinorityRadio)
                         .addGap(38, 38, 38)
-                        .addComponent(jRadioButton8)))
+                        .addComponent(minorityRadio)))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         minorityOrNonMinorityLayout.setVerticalGroup(
@@ -1081,8 +1090,8 @@ public class FillOnlineApplication extends javax.swing.JFrame {
                 .addComponent(jLabel26)
                 .addGap(18, 18, 18)
                 .addGroup(minorityOrNonMinorityLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jRadioButton8)
-                    .addComponent(jRadioButton9))
+                    .addComponent(minorityRadio)
+                    .addComponent(nonMinorityRadio))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
@@ -1137,7 +1146,7 @@ public class FillOnlineApplication extends javax.swing.JFrame {
                 .addGap(39, 39, 39)
                 .addGroup(incomeRangeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jLabel28, javax.swing.GroupLayout.PREFERRED_SIZE, 172, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jTextField14, javax.swing.GroupLayout.PREFERRED_SIZE, 151, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(incomeCertificateField, javax.swing.GroupLayout.PREFERRED_SIZE, 151, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         incomeRangeLayout.setVerticalGroup(
@@ -1155,7 +1164,7 @@ public class FillOnlineApplication extends javax.swing.JFrame {
                     .addComponent(jRadioButton10)
                     .addComponent(jRadioButton12)
                     .addComponent(jRadioButton11)
-                    .addComponent(jTextField14, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(incomeCertificateField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
@@ -1168,9 +1177,9 @@ public class FillOnlineApplication extends javax.swing.JFrame {
         jLabel31.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
         jLabel31.setText("Account Number");
 
-        jTextField16.addActionListener(new java.awt.event.ActionListener() {
+        accountNumberField.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextField16ActionPerformed(evt);
+                accountNumberFieldActionPerformed(evt);
             }
         });
 
@@ -1184,15 +1193,15 @@ public class FillOnlineApplication extends javax.swing.JFrame {
             .addGroup(bankDetailsLayout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(bankDetailsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jTextField15, javax.swing.GroupLayout.PREFERRED_SIZE, 160, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(bankAccountNameField, javax.swing.GroupLayout.PREFERRED_SIZE, 160, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel30, javax.swing.GroupLayout.PREFERRED_SIZE, 204, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(30, 30, 30)
                 .addGroup(bankDetailsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jLabel31)
-                    .addComponent(jTextField16, javax.swing.GroupLayout.PREFERRED_SIZE, 160, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(accountNumberField, javax.swing.GroupLayout.PREFERRED_SIZE, 160, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(33, 33, 33)
                 .addGroup(bankDetailsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jTextField17, javax.swing.GroupLayout.PREFERRED_SIZE, 160, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(ifscCodeField, javax.swing.GroupLayout.PREFERRED_SIZE, 160, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel32))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
             .addGroup(bankDetailsLayout.createSequentialGroup()
@@ -1211,16 +1220,16 @@ public class FillOnlineApplication extends javax.swing.JFrame {
                     .addComponent(jLabel32))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(bankDetailsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jTextField15, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jTextField16, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jTextField17, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(bankAccountNameField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(accountNumberField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(ifscCodeField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addContainerGap(12, Short.MAX_VALUE))
         );
 
         jLabel58.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
         jLabel58.setText("Class -1");
 
-        jComboBox4.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+        class1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
 
         jLabel59.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
         jLabel59.setText("Place of Study");
@@ -1228,81 +1237,81 @@ public class FillOnlineApplication extends javax.swing.JFrame {
         jLabel60.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
         jLabel60.setText("Class -2");
 
-        jComboBox5.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+        class2.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
 
         jLabel61.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
         jLabel61.setText("Class -3");
 
-        jComboBox6.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+        class3.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
 
         jLabel62.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
         jLabel62.setText("Class -4");
 
-        jComboBox7.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+        class4.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
 
         jLabel63.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
         jLabel63.setText("Class -5");
 
-        jComboBox8.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+        class5.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
 
         jLabel64.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
         jLabel64.setText("Class -6");
 
-        jComboBox9.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+        class6.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
 
         jLabel65.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
         jLabel65.setText("Class -7");
 
-        jComboBox10.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+        class7.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
 
         jLabel66.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
         jLabel66.setText("Class -8");
 
-        jComboBox11.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+        class8.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
 
         jLabel67.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
         jLabel67.setText("Class -9");
 
-        jComboBox12.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+        class9.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
 
         jLabel68.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
         jLabel68.setText("Class -10");
 
-        jComboBox13.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+        class10.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
 
         jLabel69.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
         jLabel69.setText("inter 1st year / equivalent");
 
-        jComboBox14.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+        inter1stYear.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
 
         jLabel70.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
         jLabel70.setText("inter 2nd year / equivalent");
 
-        jComboBox15.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+        inter2ndYear.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
 
         jLabel71.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
         jLabel71.setText("Local Area (Based on study details)");
 
-        jComboBox16.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+        localAreaField.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
 
         jLabel72.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
         jLabel72.setText("Select Local Area");
 
-        localArea.add(jRadioButton36);
-        jRadioButton36.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
-        jRadioButton36.setText("Andra University (AU)");
+        localArea.add(Andhra_University_AU);
+        Andhra_University_AU.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
+        Andhra_University_AU.setText("Andra University (AU)");
 
-        localArea.add(jRadioButton37);
-        jRadioButton37.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
-        jRadioButton37.setText("Sri Venkateshwara University (SVU)");
+        localArea.add(Sri_venkateshwara_university_SVU);
+        Sri_venkateshwara_university_SVU.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
+        Sri_venkateshwara_university_SVU.setText("Sri Venkateshwara University (SVU)");
 
-        localArea.add(jRadioButton38);
-        jRadioButton38.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
-        jRadioButton38.setText("Others");
+        localArea.add(Others);
+        Others.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
+        Others.setText("Others");
 
-        localArea.add(jRadioButton39);
-        jRadioButton39.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
-        jRadioButton39.setText("Osmania University (OU)");
+        localArea.add(Osmania_University_OU);
+        Osmania_University_OU.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
+        Osmania_University_OU.setText("Osmania University (OU)");
 
         javax.swing.GroupLayout placeOfStudyLayout = new javax.swing.GroupLayout(placeOfStudy);
         placeOfStudy.setLayout(placeOfStudyLayout);
@@ -1321,63 +1330,63 @@ public class FillOnlineApplication extends javax.swing.JFrame {
                             .addGroup(placeOfStudyLayout.createSequentialGroup()
                                 .addGroup(placeOfStudyLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                     .addComponent(jLabel58)
-                                    .addComponent(jComboBox4, javax.swing.GroupLayout.PREFERRED_SIZE, 107, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                    .addComponent(class1, javax.swing.GroupLayout.PREFERRED_SIZE, 107, javax.swing.GroupLayout.PREFERRED_SIZE))
                                 .addGap(18, 18, 18)
                                 .addGroup(placeOfStudyLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                     .addComponent(jLabel60)
-                                    .addComponent(jComboBox5, javax.swing.GroupLayout.PREFERRED_SIZE, 107, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                                    .addComponent(class2, javax.swing.GroupLayout.PREFERRED_SIZE, 107, javax.swing.GroupLayout.PREFERRED_SIZE)))
                             .addGroup(placeOfStudyLayout.createSequentialGroup()
                                 .addGroup(placeOfStudyLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                     .addComponent(jLabel63)
-                                    .addComponent(jComboBox8, javax.swing.GroupLayout.PREFERRED_SIZE, 107, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                    .addComponent(class5, javax.swing.GroupLayout.PREFERRED_SIZE, 107, javax.swing.GroupLayout.PREFERRED_SIZE))
                                 .addGap(18, 18, 18)
                                 .addGroup(placeOfStudyLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                     .addComponent(jLabel64)
-                                    .addComponent(jComboBox9, javax.swing.GroupLayout.PREFERRED_SIZE, 107, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                                    .addComponent(class6, javax.swing.GroupLayout.PREFERRED_SIZE, 107, javax.swing.GroupLayout.PREFERRED_SIZE)))
                             .addGroup(placeOfStudyLayout.createSequentialGroup()
                                 .addGroup(placeOfStudyLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                     .addComponent(jLabel67)
-                                    .addComponent(jComboBox12, javax.swing.GroupLayout.PREFERRED_SIZE, 107, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                    .addComponent(class9, javax.swing.GroupLayout.PREFERRED_SIZE, 107, javax.swing.GroupLayout.PREFERRED_SIZE))
                                 .addGap(18, 18, 18)
                                 .addGroup(placeOfStudyLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                     .addComponent(jLabel68)
-                                    .addComponent(jComboBox13, javax.swing.GroupLayout.PREFERRED_SIZE, 107, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                                    .addComponent(class10, javax.swing.GroupLayout.PREFERRED_SIZE, 107, javax.swing.GroupLayout.PREFERRED_SIZE))))
                         .addGap(55, 55, 55)
                         .addGroup(placeOfStudyLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(placeOfStudyLayout.createSequentialGroup()
                                 .addGroup(placeOfStudyLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                     .addComponent(jLabel61)
-                                    .addComponent(jComboBox6, javax.swing.GroupLayout.PREFERRED_SIZE, 107, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                    .addComponent(class3, javax.swing.GroupLayout.PREFERRED_SIZE, 107, javax.swing.GroupLayout.PREFERRED_SIZE))
                                 .addGap(18, 18, 18)
                                 .addGroup(placeOfStudyLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                     .addComponent(jLabel62)
-                                    .addComponent(jComboBox7, javax.swing.GroupLayout.PREFERRED_SIZE, 107, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                                    .addComponent(class4, javax.swing.GroupLayout.PREFERRED_SIZE, 107, javax.swing.GroupLayout.PREFERRED_SIZE)))
                             .addGroup(placeOfStudyLayout.createSequentialGroup()
                                 .addGroup(placeOfStudyLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                     .addComponent(jLabel65)
-                                    .addComponent(jComboBox10, javax.swing.GroupLayout.PREFERRED_SIZE, 107, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                    .addComponent(class7, javax.swing.GroupLayout.PREFERRED_SIZE, 107, javax.swing.GroupLayout.PREFERRED_SIZE))
                                 .addGap(18, 18, 18)
                                 .addGroup(placeOfStudyLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                     .addComponent(jLabel66)
-                                    .addComponent(jComboBox11, javax.swing.GroupLayout.PREFERRED_SIZE, 107, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                                    .addComponent(class8, javax.swing.GroupLayout.PREFERRED_SIZE, 107, javax.swing.GroupLayout.PREFERRED_SIZE)))
                             .addGroup(placeOfStudyLayout.createSequentialGroup()
                                 .addGroup(placeOfStudyLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(jComboBox14, javax.swing.GroupLayout.PREFERRED_SIZE, 107, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(inter1stYear, javax.swing.GroupLayout.PREFERRED_SIZE, 107, javax.swing.GroupLayout.PREFERRED_SIZE)
                                     .addComponent(jLabel69))
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addGroup(placeOfStudyLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(jComboBox15, javax.swing.GroupLayout.PREFERRED_SIZE, 107, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(inter2ndYear, javax.swing.GroupLayout.PREFERRED_SIZE, 107, javax.swing.GroupLayout.PREFERRED_SIZE)
                                     .addComponent(jLabel70)))))
-                    .addComponent(jComboBox16, javax.swing.GroupLayout.PREFERRED_SIZE, 565, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(localAreaField, javax.swing.GroupLayout.PREFERRED_SIZE, 565, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(1071, 1071, 1071))
             .addGroup(placeOfStudyLayout.createSequentialGroup()
-                .addComponent(jRadioButton36)
+                .addComponent(Andhra_University_AU)
                 .addGap(18, 18, 18)
-                .addComponent(jRadioButton39)
+                .addComponent(Osmania_University_OU)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jRadioButton37)
+                .addComponent(Sri_venkateshwara_university_SVU)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jRadioButton38)
+                .addComponent(Others)
                 .addGap(0, 0, Short.MAX_VALUE))
         );
         placeOfStudyLayout.setVerticalGroup(
@@ -1390,19 +1399,19 @@ public class FillOnlineApplication extends javax.swing.JFrame {
                     .addGroup(placeOfStudyLayout.createSequentialGroup()
                         .addComponent(jLabel60)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(jComboBox5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addComponent(class2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(placeOfStudyLayout.createSequentialGroup()
                         .addComponent(jLabel58)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(jComboBox4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addComponent(class1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(placeOfStudyLayout.createSequentialGroup()
                         .addComponent(jLabel61)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(jComboBox6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addComponent(class3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(placeOfStudyLayout.createSequentialGroup()
                         .addComponent(jLabel62)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(jComboBox7, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addComponent(class4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addGap(18, 18, 18)
                 .addGroup(placeOfStudyLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addGroup(placeOfStudyLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -1410,19 +1419,19 @@ public class FillOnlineApplication extends javax.swing.JFrame {
                             .addGroup(placeOfStudyLayout.createSequentialGroup()
                                 .addComponent(jLabel63)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(jComboBox8, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addComponent(class5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                             .addGroup(placeOfStudyLayout.createSequentialGroup()
                                 .addComponent(jLabel64)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(jComboBox9, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                                .addComponent(class6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
                         .addGroup(placeOfStudyLayout.createSequentialGroup()
                             .addComponent(jLabel65)
                             .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                            .addComponent(jComboBox10, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                            .addComponent(class7, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
                     .addGroup(placeOfStudyLayout.createSequentialGroup()
                         .addComponent(jLabel66)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(jComboBox11, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addComponent(class8, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addGap(18, 18, 18)
                 .addGroup(placeOfStudyLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addGroup(placeOfStudyLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -1430,31 +1439,31 @@ public class FillOnlineApplication extends javax.swing.JFrame {
                             .addGroup(placeOfStudyLayout.createSequentialGroup()
                                 .addComponent(jLabel67)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(jComboBox12, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addComponent(class9, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                             .addGroup(placeOfStudyLayout.createSequentialGroup()
                                 .addComponent(jLabel68)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(jComboBox13, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                                .addComponent(class10, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
                         .addGroup(placeOfStudyLayout.createSequentialGroup()
                             .addComponent(jLabel69)
                             .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                            .addComponent(jComboBox14, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                            .addComponent(inter1stYear, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
                     .addGroup(placeOfStudyLayout.createSequentialGroup()
                         .addComponent(jLabel70)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(jComboBox15, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addComponent(inter2ndYear, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addGap(18, 18, 18)
                 .addComponent(jLabel71)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jComboBox16, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(localAreaField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(jLabel72)
                 .addGap(18, 18, 18)
                 .addGroup(placeOfStudyLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jRadioButton36)
-                    .addComponent(jRadioButton39)
-                    .addComponent(jRadioButton37)
-                    .addComponent(jRadioButton38))
+                    .addComponent(Andhra_University_AU)
+                    .addComponent(Osmania_University_OU)
+                    .addComponent(Sri_venkateshwara_university_SVU)
+                    .addComponent(Others))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
@@ -1475,6 +1484,12 @@ public class FillOnlineApplication extends javax.swing.JFrame {
 
         jLabel38.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
         jLabel38.setText("State");
+
+        stateField.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                stateFieldActionPerformed(evt);
+            }
+        });
 
         jLabel39.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
         jLabel39.setText("Pincode");
@@ -1503,40 +1518,40 @@ public class FillOnlineApplication extends javax.swing.JFrame {
                 .addGroup(addressLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(addressLayout.createSequentialGroup()
                         .addGroup(addressLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jTextField18, javax.swing.GroupLayout.PREFERRED_SIZE, 160, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(houseNumberField, javax.swing.GroupLayout.PREFERRED_SIZE, 160, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(jLabel34))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addGroup(addressLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jTextField19, javax.swing.GroupLayout.PREFERRED_SIZE, 160, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(villageOrStreetField, javax.swing.GroupLayout.PREFERRED_SIZE, 160, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(jLabel35))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addGroup(addressLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jTextField20, javax.swing.GroupLayout.PREFERRED_SIZE, 160, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(mandalOrTownField, javax.swing.GroupLayout.PREFERRED_SIZE, 160, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(jLabel36)))
-                    .addComponent(jTextField27, javax.swing.GroupLayout.PREFERRED_SIZE, 320, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(emailField, javax.swing.GroupLayout.PREFERRED_SIZE, 320, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addGroup(addressLayout.createSequentialGroup()
                         .addGroup(addressLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jTextField21, javax.swing.GroupLayout.PREFERRED_SIZE, 160, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(districtField, javax.swing.GroupLayout.PREFERRED_SIZE, 160, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(jLabel37))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addGroup(addressLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jTextField22, javax.swing.GroupLayout.PREFERRED_SIZE, 160, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(stateField, javax.swing.GroupLayout.PREFERRED_SIZE, 160, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(jLabel38))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addGroup(addressLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jTextField23, javax.swing.GroupLayout.PREFERRED_SIZE, 160, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(pincodeField, javax.swing.GroupLayout.PREFERRED_SIZE, 160, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(jLabel39)))
                     .addGroup(addressLayout.createSequentialGroup()
                         .addGroup(addressLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jTextField24, javax.swing.GroupLayout.PREFERRED_SIZE, 160, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(mobileNumberField, javax.swing.GroupLayout.PREFERRED_SIZE, 160, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(jLabel40))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addGroup(addressLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jTextField25, javax.swing.GroupLayout.PREFERRED_SIZE, 160, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(altMobileNumberField, javax.swing.GroupLayout.PREFERRED_SIZE, 160, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(jLabel41))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addGroup(addressLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jTextField26, javax.swing.GroupLayout.PREFERRED_SIZE, 160, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(landlineField, javax.swing.GroupLayout.PREFERRED_SIZE, 160, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(jLabel42)))
                     .addComponent(jLabel43))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
@@ -1551,47 +1566,47 @@ public class FillOnlineApplication extends javax.swing.JFrame {
                     .addGroup(addressLayout.createSequentialGroup()
                         .addComponent(jLabel34)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jTextField18, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addComponent(houseNumberField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(addressLayout.createSequentialGroup()
                         .addComponent(jLabel35)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jTextField19, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addComponent(villageOrStreetField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(addressLayout.createSequentialGroup()
                         .addComponent(jLabel36)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jTextField20, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addComponent(mandalOrTownField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addGap(18, 18, 18)
                 .addGroup(addressLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(addressLayout.createSequentialGroup()
                         .addComponent(jLabel37)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jTextField21, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addComponent(districtField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(addressLayout.createSequentialGroup()
                         .addComponent(jLabel38)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jTextField22, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addComponent(stateField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(addressLayout.createSequentialGroup()
                         .addComponent(jLabel39)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jTextField23, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addComponent(pincodeField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(addressLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(addressLayout.createSequentialGroup()
                         .addComponent(jLabel40)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jTextField24, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addComponent(mobileNumberField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(addressLayout.createSequentialGroup()
                         .addComponent(jLabel41)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jTextField25, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addComponent(altMobileNumberField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(addressLayout.createSequentialGroup()
                         .addComponent(jLabel42)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jTextField26, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addComponent(landlineField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(jLabel43)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jTextField27, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(emailField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
@@ -1672,7 +1687,7 @@ public class FillOnlineApplication extends javax.swing.JFrame {
         jLabel50.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
         jLabel50.setText("10+2/diploma studied in");
 
-        jComboBox3.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+        diplomaStudiedField.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
 
         jLabel51.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
         jLabel51.setText("Bridge course hall ticket Number");
@@ -1692,6 +1707,7 @@ public class FillOnlineApplication extends javax.swing.JFrame {
         jRadioButton29.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
         jRadioButton29.setText("english");
 
+        instructionMedium.add(jRadioButton30);
         jRadioButton30.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
         jRadioButton30.setText("Others");
 
@@ -1710,7 +1726,7 @@ public class FillOnlineApplication extends javax.swing.JFrame {
         jRadioButton33.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
         jRadioButton33.setText("English & urdu");
 
-        jComboBox39.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+        interYearOfPassingField.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
 
         javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
         jPanel3.setLayout(jPanel3Layout);
@@ -1755,26 +1771,24 @@ public class FillOnlineApplication extends javax.swing.JFrame {
                                 .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel3Layout.createSequentialGroup()
                                     .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                         .addComponent(jLabel47)
-                                        .addComponent(jTextField28, javax.swing.GroupLayout.PREFERRED_SIZE, 269, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                        .addComponent(interHallTicketField, javax.swing.GroupLayout.PREFERRED_SIZE, 269, javax.swing.GroupLayout.PREFERRED_SIZE))
                                     .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED))
                                 .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel3Layout.createSequentialGroup()
                                     .addComponent(jLabel51)
                                     .addGap(26, 26, 26)))
                             .addGroup(jPanel3Layout.createSequentialGroup()
-                                .addComponent(jTextField30, javax.swing.GroupLayout.PREFERRED_SIZE, 269, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(bridgeCourseHallticketField, javax.swing.GroupLayout.PREFERRED_SIZE, 269, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)))
                         .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(jPanel3Layout.createSequentialGroup()
                                 .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                     .addComponent(jLabel52)
                                     .addComponent(jLabel49)
-                                    .addComponent(jComboBox39, javax.swing.GroupLayout.PREFERRED_SIZE, 227, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                    .addComponent(interYearOfPassingField, javax.swing.GroupLayout.PREFERRED_SIZE, 227, javax.swing.GroupLayout.PREFERRED_SIZE))
                                 .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                     .addGroup(jPanel3Layout.createSequentialGroup()
                                         .addGap(24, 24, 24)
-                                        .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                            .addComponent(jRadioButton30)
-                                            .addComponent(jComboBox3, javax.swing.GroupLayout.PREFERRED_SIZE, 151, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                                        .addComponent(diplomaStudiedField, javax.swing.GroupLayout.PREFERRED_SIZE, 151, javax.swing.GroupLayout.PREFERRED_SIZE))
                                     .addGroup(jPanel3Layout.createSequentialGroup()
                                         .addGap(18, 18, 18)
                                         .addComponent(jLabel50))))
@@ -1786,7 +1800,9 @@ public class FillOnlineApplication extends javax.swing.JFrame {
                                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                         .addComponent(jRadioButton29)
                                         .addGap(20, 20, 20)
-                                        .addComponent(jRadioButton28))
+                                        .addComponent(jRadioButton28)
+                                        .addGap(18, 18, 18)
+                                        .addComponent(jRadioButton30))
                                     .addGroup(jPanel3Layout.createSequentialGroup()
                                         .addGap(6, 6, 6)
                                         .addComponent(jRadioButton31)
@@ -1848,9 +1864,9 @@ public class FillOnlineApplication extends javax.swing.JFrame {
                             .addComponent(jLabel50))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(jTextField28, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jComboBox39, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                    .addComponent(jComboBox3, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addComponent(interHallTicketField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(interYearOfPassingField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                    .addComponent(diplomaStudiedField, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
                 .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addGroup(jPanel3Layout.createSequentialGroup()
@@ -1871,29 +1887,29 @@ public class FillOnlineApplication extends javax.swing.JFrame {
                     .addGroup(jPanel3Layout.createSequentialGroup()
                         .addComponent(jLabel51)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(jTextField30, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addComponent(bridgeCourseHallticketField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         jLabel54.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
         jLabel54.setText("SSC or Equivalent (10th class)");
 
-        sscArea.add(jRadioButton34);
-        jRadioButton34.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
-        jRadioButton34.setText("Urban");
+        sscArea.add(ssc_urban);
+        ssc_urban.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
+        ssc_urban.setText("Urban");
 
-        sscArea.add(jRadioButton35);
-        jRadioButton35.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
-        jRadioButton35.setText("Rural");
+        sscArea.add(ssc_rural);
+        ssc_rural.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
+        ssc_rural.setText("Rural");
 
         jLabel55.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
         jLabel55.setText("Hall ticket no");
 
-        jLabel56.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
-        jLabel56.setText("Month");
+        sscPassMonth.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
+        sscPassMonth.setText("Month");
 
-        jLabel57.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
-        jLabel57.setText("Year of passing");
+        sscPassYear.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
+        sscPassYear.setText("Year of passing");
 
         javax.swing.GroupLayout sscLayout = new javax.swing.GroupLayout(ssc);
         ssc.setLayout(sscLayout);
@@ -1905,20 +1921,20 @@ public class FillOnlineApplication extends javax.swing.JFrame {
                     .addComponent(jLabel54, javax.swing.GroupLayout.PREFERRED_SIZE, 295, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addGroup(sscLayout.createSequentialGroup()
                         .addGroup(sscLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jRadioButton35)
-                            .addComponent(jRadioButton34))
+                            .addComponent(ssc_rural)
+                            .addComponent(ssc_urban))
                         .addGap(62, 62, 62)
                         .addGroup(sscLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addComponent(jTextField31)
+                            .addComponent(sscHallTicketField)
                             .addComponent(jLabel55))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addGroup(sscLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addComponent(jTextField32)
-                            .addComponent(jLabel56))
+                            .addComponent(sscPassingMonthField)
+                            .addComponent(sscPassMonth))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addGroup(sscLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addComponent(jTextField33)
-                            .addComponent(jLabel57))))
+                            .addComponent(sscPassYearField)
+                            .addComponent(sscPassYear))))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         sscLayout.setVerticalGroup(
@@ -1929,21 +1945,21 @@ public class FillOnlineApplication extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(sscLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(sscLayout.createSequentialGroup()
-                        .addComponent(jRadioButton34)
+                        .addComponent(ssc_urban)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jRadioButton35))
+                        .addComponent(ssc_rural))
                     .addGroup(sscLayout.createSequentialGroup()
                         .addComponent(jLabel55)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(jTextField31, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addComponent(sscHallTicketField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(sscLayout.createSequentialGroup()
-                        .addComponent(jLabel56)
+                        .addComponent(sscPassMonth)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(jTextField32, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addComponent(sscPassingMonthField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(sscLayout.createSequentialGroup()
-                        .addComponent(jLabel57)
+                        .addComponent(sscPassYear)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(jTextField33, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addComponent(sscPassYearField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
@@ -1953,9 +1969,9 @@ public class FillOnlineApplication extends javax.swing.JFrame {
         jLabel74.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
         jLabel74.setText("Test Zone");
 
-        jTextField34.addActionListener(new java.awt.event.ActionListener() {
+        streamAppliedField.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextField34ActionPerformed(evt);
+                streamAppliedFieldActionPerformed(evt);
             }
         });
 
@@ -1965,17 +1981,22 @@ public class FillOnlineApplication extends javax.swing.JFrame {
         jLabel76.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
         jLabel76.setText("Preference-1");
 
-        jComboBox17.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+        zone1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
 
         jLabel77.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
         jLabel77.setText("Preference-2");
 
-        jComboBox18.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+        zone2.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+        zone2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                zone2ActionPerformed(evt);
+            }
+        });
 
         jLabel78.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
         jLabel78.setText("Preference-3");
 
-        jComboBox19.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+        zone3.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
 
         javax.swing.GroupLayout detailsOfCommanTestLayout = new javax.swing.GroupLayout(detailsOfCommanTest);
         detailsOfCommanTest.setLayout(detailsOfCommanTestLayout);
@@ -1984,21 +2005,21 @@ public class FillOnlineApplication extends javax.swing.JFrame {
             .addGroup(detailsOfCommanTestLayout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(detailsOfCommanTestLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jTextField34, javax.swing.GroupLayout.PREFERRED_SIZE, 378, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(streamAppliedField, javax.swing.GroupLayout.PREFERRED_SIZE, 378, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel73, javax.swing.GroupLayout.PREFERRED_SIZE, 310, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel75)
                     .addComponent(jLabel74)
                     .addGroup(detailsOfCommanTestLayout.createSequentialGroup()
                         .addGroup(detailsOfCommanTestLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jComboBox17, javax.swing.GroupLayout.PREFERRED_SIZE, 210, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(zone1, javax.swing.GroupLayout.PREFERRED_SIZE, 210, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(jLabel76))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addGroup(detailsOfCommanTestLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jComboBox18, javax.swing.GroupLayout.PREFERRED_SIZE, 210, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(zone2, javax.swing.GroupLayout.PREFERRED_SIZE, 210, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(jLabel77))
                         .addGap(18, 18, 18)
                         .addGroup(detailsOfCommanTestLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jComboBox19, javax.swing.GroupLayout.PREFERRED_SIZE, 210, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(zone3, javax.swing.GroupLayout.PREFERRED_SIZE, 210, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(jLabel78))))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
@@ -2010,13 +2031,13 @@ public class FillOnlineApplication extends javax.swing.JFrame {
                     .addGroup(detailsOfCommanTestLayout.createSequentialGroup()
                         .addComponent(jLabel78)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jComboBox19, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addComponent(zone3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(detailsOfCommanTestLayout.createSequentialGroup()
                         .addComponent(jLabel73)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addComponent(jLabel75)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jTextField34, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(streamAppliedField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(jLabel74)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -2024,11 +2045,11 @@ public class FillOnlineApplication extends javax.swing.JFrame {
                             .addGroup(detailsOfCommanTestLayout.createSequentialGroup()
                                 .addComponent(jLabel76)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(jComboBox17, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addComponent(zone1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                             .addGroup(detailsOfCommanTestLayout.createSequentialGroup()
                                 .addComponent(jLabel77)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(jComboBox18, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))))
+                                .addComponent(zone2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
@@ -3639,13 +3660,13 @@ public class FillOnlineApplication extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_jRadioButton10ActionPerformed
 
-    private void jRadioButton9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jRadioButton9ActionPerformed
+    private void nonMinorityRadioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_nonMinorityRadioActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jRadioButton9ActionPerformed
+    }//GEN-LAST:event_nonMinorityRadioActionPerformed
 
-    private void jRadioButton8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jRadioButton8ActionPerformed
+    private void minorityRadioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_minorityRadioActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jRadioButton8ActionPerformed
+    }//GEN-LAST:event_minorityRadioActionPerformed
 
     private void jCheckBox5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jCheckBox5ActionPerformed
         // TODO add your handling code here:
@@ -3671,17 +3692,17 @@ public class FillOnlineApplication extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_birthDistrictFieldActionPerformed
 
-    private void jTextField34ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField34ActionPerformed
+    private void streamAppliedFieldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_streamAppliedFieldActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField34ActionPerformed
+    }//GEN-LAST:event_streamAppliedFieldActionPerformed
 
     private void nextActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_nextActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_nextActionPerformed
 
-    private void jTextField16ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField16ActionPerformed
+    private void accountNumberFieldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_accountNumberFieldActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField16ActionPerformed
+    }//GEN-LAST:event_accountNumberFieldActionPerformed
 
     private void saveActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_saveActionPerformed
        setStudentData(ffi);    
@@ -3690,6 +3711,16 @@ public class FillOnlineApplication extends javax.swing.JFrame {
     private void aadhaarNumberFieldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_aadhaarNumberFieldActionPerformed
        
     }//GEN-LAST:event_aadhaarNumberFieldActionPerformed
+
+    private void stateFieldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_stateFieldActionPerformed
+        // TODO add your handling code here:
+        
+        
+    }//GEN-LAST:event_stateFieldActionPerformed
+
+    private void zone2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_zone2ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_zone2ActionPerformed
 
     
     public void setStudentData(FillFormInitial ffi){
@@ -3729,57 +3760,151 @@ public class FillOnlineApplication extends javax.swing.JFrame {
 
        ffi.setCasteCertificateNumber(casteCertificateNumberField.getText());
        ffi.setEwsNumber(ewsNumberField.getText());
-       ffi.setSpecialReservation("");
-//        ffi.setPh(ph);
-//        ffi.setScribe(scribe);
-//        ffi.setSadaramNumber(sadaramNumber);
-//        ffi.setMinority(minority);
-//        ffi.setAnnualIncome(annualIncome);
-//        ffi.setIncomeCertificateNumber(incomeCertificateNumber);
-//        ffi.setNameAsInBankAccount(nameAsInBankAccount);
-//        ffi.setAccountNumber(accountNumber);
-//        ffi.setIfscCode(ifscCode);
-//        ffi.setHouseNumber(houseNumber);
-//        ffi.setVillageOrStreet(villageOrStreet);
-//        ffi.setMandalOrTown(mandalOrTown);
-//        ffi.setDistrict(district);
-//        ffi.setState(state);
-//        ffi.setPincode(pincode);
-//        ffi.setMobileNumber(mobileNumber);
-//        ffi.setAlternateMobileNumber(alternateMobileNumber);
-//        ffi.setLandlineNumber(landlineNumber);
-//        ffi.setEmailId(emailId);
-//        ffi.setIntermediate(intermediate);
-//        ffi.setTypeOfExam(typeOfExam);
-//        ffi.setGroupSubject(groupSubject);
-//        ffi.setInterHallticketNumber(interHallticketNumber);
-//        ffi.setInterYearOfPassing(interYearOfPassing);
-//        ffi.setDiplomaStudied(diplomaStudied);
-//        ffi.setBridgeCourseHallTicketNumber(bridgeCourseHallTicketNumber);
-//        ffi.setMediumOfInst(mediumOfInst);
-//        ffi.setMediumOfTest(mediumOfTest);
-//        ffi.setSscArea(sscArea);
-//        ffi.setSscHallticketNumber(sscHallticketNumber);
-//        ffi.setSscMonth(sscMonth);
-//        ffi.setSscYearOfPassing(sscYearOfPassing);
-//        ffi.setClass1(class1);
-//        ffi.setClass2(class2);
-//        ffi.setClass3(class3);
-//        ffi.setClass4(class4);
-//        ffi.setClass5(class5);
-//        ffi.setClass6(class6);
-//        ffi.setClass7(class7);
-//        ffi.setClass8(class8);
-//        ffi.setClass9(class9);
-//        ffi.setClass10(class10);
-//        ffi.setInterClass1(interClass1);
-//        ffi.setInterClass2(interClass2);
-//        ffi.setLocalArea(localArea);
-//        ffi.setSelectLocalArea(selectLocalArea);
-//        ffi.setStreamApplied(streamApplied);
-//        ffi.setTestZone1(testZone1);
-//        ffi.setTestZone2(testZone2);
-//        ffi.setTestZone3(testZone3);
+       StringBuffer phArray= new StringBuffer("");
+       StringBuffer specialReservationArray = new StringBuffer("");
+        buttons = specialReservation.getElements();
+            while (buttons.hasMoreElements()) {
+                    AbstractButton button = buttons.nextElement();
+                    if (button.isSelected()) {
+                       specialReservationArray.append(button.getText()+",");
+                    }
+                }
+       
+       ffi.setSpecialReservation(new String(specialReservationArray));
+        buttons = ph.getElements();
+            while (buttons.hasMoreElements()) {
+                    AbstractButton button = buttons.nextElement();
+                    if (button.isSelected()) {
+                       phArray.append(button.getText()+",");
+                    }
+                }
+       
+        ffi.setPh(new String(phArray));
+            buttons = scribe.getElements();
+            while (buttons.hasMoreElements()) {
+                    AbstractButton button = buttons.nextElement();
+                    if (button.isSelected()) {
+                        ffi.setScribe(button.getText());
+                        break;
+                    }
+                }
+        ffi.setSadaramNumber(sadaramNumberField.getText());
+                buttons = minority.getElements();
+            while (buttons.hasMoreElements()) {
+                    AbstractButton button = buttons.nextElement();
+                    if (button.isSelected()) {
+                        ffi.setMinority(button.getText());
+                        break;
+                    }
+                }
+
+                buttons = annualIncome.getElements();
+            while (buttons.hasMoreElements()) {
+                    AbstractButton button = buttons.nextElement();
+                    if (button.isSelected()) {
+                        ffi.setAnnualIncome(button.getText());
+                        break;
+                    }
+                }
+
+        ffi.setIncomeCertificateNumber(incomeCertificateField.getText());
+        ffi.setNameAsInBankAccount(bankAccountNameField.getText());
+        ffi.setAccountNumber(accountNumberField.getText());
+        ffi.setIfscCode(ifscCodeField.getText());
+        ffi.setHouseNumber(houseNumberField.getText());
+        ffi.setVillageOrStreet(villageOrStreetField.getText());
+        ffi.setMandalOrTown(mandalOrTownField.getText());
+        ffi.setDistrict(districtField.getText());
+        ffi.setState(stateField.getText());
+        ffi.setPincode(pincodeField.getText());
+        ffi.setMobileNumber(mobileNumberField.getText());
+        ffi.setAlternateMobileNumber(altMobileNumberField.getText());
+        ffi.setLandlineNumber(landlineField.getText());
+        ffi.setEmailId(emailField.getText());
+           buttons = area.getElements();
+            while (buttons.hasMoreElements()) {
+                    AbstractButton button = buttons.nextElement();
+                    if (button.isSelected()) {
+                        ffi.setIntermediate(button.getText());
+                        break;
+                    }
+                }
+      
+               buttons = typeOfExam.getElements();
+            while (buttons.hasMoreElements()) {
+                    AbstractButton button = buttons.nextElement();
+                    if (button.isSelected()) {
+                        ffi.setTypeOfExam(button.getText());
+                        break;
+                    }
+                }
+               buttons = qualifyExamSubjects.getElements();
+            while (buttons.hasMoreElements()) {
+                    AbstractButton button = buttons.nextElement();
+                    if (button.isSelected()) {
+                        ffi.setGroupSubject(button.getText());
+                        break;
+                    }
+                }
+           ffi.setInterHallticketNumber(interHallTicketField.getText());
+        ffi.setInterYearOfPassing((String)interYearOfPassingField.getSelectedItem());
+        ffi.setDiplomaStudied((String)diplomaStudiedField.getSelectedItem());
+           ffi.setBridgeCourseHallTicketNumber(bridgeCourseHallticketField.getText());
+              buttons = instructionMedium.getElements();
+            while (buttons.hasMoreElements()) {
+                    AbstractButton button = buttons.nextElement();
+                    if (button.isSelected()) {
+                        ffi.setMediumOfInst(button.getText());
+                        break;
+                    }
+                }
+             buttons = testMedium.getElements();
+            while (buttons.hasMoreElements()) {
+                    AbstractButton button = buttons.nextElement();
+                    if (button.isSelected()) {
+                        ffi.setMediumOfTest(button.getText());
+                        break;
+                    }
+                }
+            
+               buttons = sscArea.getElements();
+            while (buttons.hasMoreElements()) {
+                    AbstractButton button = buttons.nextElement();
+                    if (button.isSelected()) {
+                        ffi.setSscArea(button.getText());
+                        break;
+                    }
+                }
+            
+        ffi.setSscHallticketNumber(sscHallTicketField.getText());
+        ffi.setSscMonth(sscPassYearField.getText());
+        ffi.setSscYearOfPassing(sscPassYearField.getText());
+        ffi.setClass1((String)class1.getSelectedItem());
+        ffi.setClass2((String)class2.getSelectedItem());
+        ffi.setClass3((String)class3.getSelectedItem());
+        ffi.setClass4((String)class4.getSelectedItem());
+        ffi.setClass5((String)class5.getSelectedItem());
+        ffi.setClass6((String)class6.getSelectedItem());
+        ffi.setClass7((String)class7.getSelectedItem());
+        ffi.setClass8((String)class8.getSelectedItem());
+        ffi.setClass9((String)class9.getSelectedItem());
+        ffi.setClass10((String)class10.getSelectedItem());
+        ffi.setInterClass1((String)inter1stYear.getSelectedItem());
+        ffi.setInterClass2((String)inter2ndYear.getSelectedItem());
+        ffi.setLocalArea((String)localAreaField.getSelectedItem());
+       
+          buttons = localArea.getElements();
+            while (buttons.hasMoreElements()) {
+                    AbstractButton button = buttons.nextElement();
+                    if (button.isSelected()) {
+                        ffi.setSelectLocalArea(button.getText());
+                        break;
+                    }
+                }
+        ffi.setStreamApplied(streamAppliedField.getText());
+        ffi.setTestZone1((String)zone1.getSelectedItem());
+        ffi.setTestZone2((String)zone2.getSelectedItem());
+        ffi.setTestZone3((String)zone3.getSelectedItem());
 
       SaveApplicationForm saveApplicationForm =  new  SaveApplicationForm(ffi);
       int confirmSave = saveApplicationForm.startSave();
@@ -3805,6 +3930,10 @@ public class FillOnlineApplication extends javax.swing.JFrame {
 //          }
 //      }
 
+      
+      
+      
+      
     /**
      * @param args the command line arguments
      */
@@ -3845,14 +3974,21 @@ public class FillOnlineApplication extends javax.swing.JFrame {
         this.awf= awf;
     }
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JRadioButton Andhra_University_AU;
     private javax.swing.JPanel FillDetails;
+    private javax.swing.JRadioButton Osmania_University_OU;
+    private javax.swing.JRadioButton Others;
+    private javax.swing.JRadioButton Sri_venkateshwara_university_SVU;
     private javax.swing.JLabel aadhaarNumber;
     private javax.swing.JTextField aadhaarNumberField;
+    private javax.swing.JTextField accountNumberField;
     private javax.swing.JPanel address;
     private javax.swing.JPanel address1;
+    private javax.swing.JTextField altMobileNumberField;
     private javax.swing.ButtonGroup annualIncome;
     private javax.swing.ButtonGroup area;
     private javax.swing.JButton backButton;
+    private javax.swing.JTextField bankAccountNameField;
     private javax.swing.JPanel bankDetails;
     private javax.swing.JPanel bankDetails1;
     private javax.swing.JRadioButton bca;
@@ -3869,6 +4005,7 @@ public class FillOnlineApplication extends javax.swing.JFrame {
     private javax.swing.JComboBox<String> birthDistrictField;
     private javax.swing.JLabel birthState;
     private javax.swing.JComboBox<String> birthStateField;
+    private javax.swing.JTextField bridgeCourseHallticketField;
     private javax.swing.JPanel candidateDetails;
     private javax.swing.JPanel candidateDetails1;
     private javax.swing.JLabel candidateDetailsHead;
@@ -3879,11 +4016,24 @@ public class FillOnlineApplication extends javax.swing.JFrame {
     private javax.swing.JPanel categoryDetails;
     private javax.swing.JPanel categoryDetails1;
     private javax.swing.JPanel checkDetails;
+    private javax.swing.JComboBox<String> class1;
+    private javax.swing.JComboBox<String> class10;
+    private javax.swing.JComboBox<String> class2;
+    private javax.swing.JComboBox<String> class3;
+    private javax.swing.JComboBox<String> class4;
+    private javax.swing.JComboBox<String> class5;
+    private javax.swing.JComboBox<String> class6;
+    private javax.swing.JComboBox<String> class7;
+    private javax.swing.JComboBox<String> class8;
+    private javax.swing.JComboBox<String> class9;
     private javax.swing.JLabel dateOfBirth;
     private javax.swing.JTextField dateOfBirth1;
     private javax.swing.JTextField dateOfBirthField;
     private javax.swing.JPanel detailsOfCommanTest;
     private javax.swing.JPanel detailsOfCommanTest1;
+    private javax.swing.JComboBox<String> diplomaStudiedField;
+    private javax.swing.JTextField districtField;
+    private javax.swing.JTextField emailField;
     private javax.swing.JTextField ewsNumberField;
     private javax.swing.JLabel fatherName;
     private javax.swing.JTextField fatherNameField;
@@ -3893,9 +4043,16 @@ public class FillOnlineApplication extends javax.swing.JFrame {
     private javax.swing.ButtonGroup gender;
     private javax.swing.JLabel genderLabel;
     private javax.swing.JTextField hallTicket1;
+    private javax.swing.JTextField houseNumberField;
+    private javax.swing.JTextField ifscCodeField;
+    private javax.swing.JTextField incomeCertificateField;
     private javax.swing.JPanel incomeRange;
     private javax.swing.JPanel incomeRange1;
     private javax.swing.ButtonGroup instructionMedium;
+    private javax.swing.JComboBox<String> inter1stYear;
+    private javax.swing.JComboBox<String> inter2ndYear;
+    private javax.swing.JTextField interHallTicketField;
+    private javax.swing.JComboBox<String> interYearOfPassingField;
     private javax.swing.JCheckBox jCheckBox1;
     private javax.swing.JCheckBox jCheckBox10;
     private javax.swing.JCheckBox jCheckBox11;
@@ -3910,16 +4067,6 @@ public class FillOnlineApplication extends javax.swing.JFrame {
     private javax.swing.JCheckBox jCheckBox7;
     private javax.swing.JCheckBox jCheckBox8;
     private javax.swing.JCheckBox jCheckBox9;
-    private javax.swing.JComboBox<String> jComboBox10;
-    private javax.swing.JComboBox<String> jComboBox11;
-    private javax.swing.JComboBox<String> jComboBox12;
-    private javax.swing.JComboBox<String> jComboBox13;
-    private javax.swing.JComboBox<String> jComboBox14;
-    private javax.swing.JComboBox<String> jComboBox15;
-    private javax.swing.JComboBox<String> jComboBox16;
-    private javax.swing.JComboBox<String> jComboBox17;
-    private javax.swing.JComboBox<String> jComboBox18;
-    private javax.swing.JComboBox<String> jComboBox19;
     private javax.swing.JComboBox<String> jComboBox20;
     private javax.swing.JComboBox<String> jComboBox21;
     private javax.swing.JComboBox<String> jComboBox22;
@@ -3930,7 +4077,6 @@ public class FillOnlineApplication extends javax.swing.JFrame {
     private javax.swing.JComboBox<String> jComboBox27;
     private javax.swing.JComboBox<String> jComboBox28;
     private javax.swing.JComboBox<String> jComboBox29;
-    private javax.swing.JComboBox<String> jComboBox3;
     private javax.swing.JComboBox<String> jComboBox30;
     private javax.swing.JComboBox<String> jComboBox31;
     private javax.swing.JComboBox<String> jComboBox32;
@@ -3940,13 +4086,6 @@ public class FillOnlineApplication extends javax.swing.JFrame {
     private javax.swing.JComboBox<String> jComboBox36;
     private javax.swing.JComboBox<String> jComboBox37;
     private javax.swing.JComboBox<String> jComboBox38;
-    private javax.swing.JComboBox<String> jComboBox39;
-    private javax.swing.JComboBox<String> jComboBox4;
-    private javax.swing.JComboBox<String> jComboBox5;
-    private javax.swing.JComboBox<String> jComboBox6;
-    private javax.swing.JComboBox<String> jComboBox7;
-    private javax.swing.JComboBox<String> jComboBox8;
-    private javax.swing.JComboBox<String> jComboBox9;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel100;
     private javax.swing.JLabel jLabel101;
@@ -4051,8 +4190,6 @@ public class FillOnlineApplication extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel53;
     private javax.swing.JLabel jLabel54;
     private javax.swing.JLabel jLabel55;
-    private javax.swing.JLabel jLabel56;
-    private javax.swing.JLabel jLabel57;
     private javax.swing.JLabel jLabel58;
     private javax.swing.JLabel jLabel59;
     private javax.swing.JLabel jLabel60;
@@ -4123,12 +4260,6 @@ public class FillOnlineApplication extends javax.swing.JFrame {
     private javax.swing.JRadioButton jRadioButton31;
     private javax.swing.JRadioButton jRadioButton32;
     private javax.swing.JRadioButton jRadioButton33;
-    private javax.swing.JRadioButton jRadioButton34;
-    private javax.swing.JRadioButton jRadioButton35;
-    private javax.swing.JRadioButton jRadioButton36;
-    private javax.swing.JRadioButton jRadioButton37;
-    private javax.swing.JRadioButton jRadioButton38;
-    private javax.swing.JRadioButton jRadioButton39;
     private javax.swing.JRadioButton jRadioButton4;
     private javax.swing.JRadioButton jRadioButton40;
     private javax.swing.JRadioButton jRadioButton41;
@@ -4172,30 +4303,7 @@ public class FillOnlineApplication extends javax.swing.JFrame {
     private javax.swing.JRadioButton jRadioButton76;
     private javax.swing.JRadioButton jRadioButton77;
     private javax.swing.JRadioButton jRadioButton78;
-    private javax.swing.JRadioButton jRadioButton8;
-    private javax.swing.JRadioButton jRadioButton9;
     private javax.swing.JScrollBar jScrollBar1;
-    private javax.swing.JTextField jTextField13;
-    private javax.swing.JTextField jTextField14;
-    private javax.swing.JTextField jTextField15;
-    private javax.swing.JTextField jTextField16;
-    private javax.swing.JTextField jTextField17;
-    private javax.swing.JTextField jTextField18;
-    private javax.swing.JTextField jTextField19;
-    private javax.swing.JTextField jTextField20;
-    private javax.swing.JTextField jTextField21;
-    private javax.swing.JTextField jTextField22;
-    private javax.swing.JTextField jTextField23;
-    private javax.swing.JTextField jTextField24;
-    private javax.swing.JTextField jTextField25;
-    private javax.swing.JTextField jTextField26;
-    private javax.swing.JTextField jTextField27;
-    private javax.swing.JTextField jTextField28;
-    private javax.swing.JTextField jTextField30;
-    private javax.swing.JTextField jTextField31;
-    private javax.swing.JTextField jTextField32;
-    private javax.swing.JTextField jTextField33;
-    private javax.swing.JTextField jTextField34;
     private javax.swing.JTextField jTextField35;
     private javax.swing.JTextField jTextField36;
     private javax.swing.JTextField jTextField37;
@@ -4226,43 +4334,66 @@ public class FillOnlineApplication extends javax.swing.JFrame {
     private javax.swing.JTextField jTextField62;
     private javax.swing.JTextField jTextField63;
     private javax.swing.JTextField jTextField64;
+    private javax.swing.JTextField landlineField;
     private javax.swing.ButtonGroup localArea;
+    private javax.swing.JComboBox<String> localAreaField;
     private javax.swing.JRadioButton male;
+    private javax.swing.JTextField mandalOrTownField;
     private javax.swing.ButtonGroup minority;
     private javax.swing.JPanel minorityOrNonMinority;
     private javax.swing.JPanel minorityOrNonMinority1;
+    private javax.swing.JRadioButton minorityRadio;
     private javax.swing.JTextField mobileNumber1;
+    private javax.swing.JTextField mobileNumberField;
     private javax.swing.JPanel modify;
     private javax.swing.JButton modifyButton;
     private javax.swing.JLabel motherName;
     private javax.swing.JTextField motherNameField;
     private javax.swing.JButton next;
+    private javax.swing.JRadioButton nonMinorityRadio;
     private javax.swing.JRadioButton oc;
     private javax.swing.JRadioButton oc1;
     private javax.swing.JTextField paymentReference1;
+    private javax.swing.ButtonGroup ph;
     private javax.swing.JPanel photoSignature;
     private javax.swing.JPanel photoSignature1;
+    private javax.swing.JTextField pincodeField;
     private javax.swing.JPanel placeOfStudy;
     private javax.swing.JPanel placeOfStudy1;
     private javax.swing.JButton proceedButton;
     private javax.swing.ButtonGroup qualifyExamSubjects;
     private javax.swing.JLabel rationCardNumber;
     private javax.swing.JTextField rationCardNumberField;
+    private javax.swing.JTextField sadaramNumberField;
     private javax.swing.JButton save;
     private javax.swing.JRadioButton sc;
     private javax.swing.JRadioButton sc1;
     private javax.swing.ButtonGroup scribe;
+    private javax.swing.ButtonGroup specialReservation;
     private javax.swing.JPanel specialReservationCategory;
     private javax.swing.JPanel specialReservationCategory1;
     private javax.swing.JPanel ssc;
     private javax.swing.JPanel ssc1;
     private javax.swing.ButtonGroup sscArea;
+    private javax.swing.JTextField sscHallTicketField;
+    private javax.swing.JLabel sscPassMonth;
+    private javax.swing.JLabel sscPassYear;
+    private javax.swing.JTextField sscPassYearField;
+    private javax.swing.JTextField sscPassingMonthField;
+    private javax.swing.JRadioButton ssc_rural;
+    private javax.swing.JRadioButton ssc_urban;
     private javax.swing.JRadioButton st;
     private javax.swing.JRadioButton st1;
+    private javax.swing.JTextField stateField;
+    private javax.swing.JTextField streamAppliedField;
     private javax.swing.JButton submit;
     private javax.swing.ButtonGroup testMedium;
     private javax.swing.JRadioButton transgender;
     private javax.swing.ButtonGroup typeOfExam;
+    private javax.swing.JTextField villageOrStreetField;
     private javax.swing.ButtonGroup weakerSection;
+    private javax.swing.JComboBox<String> zone1;
+    private javax.swing.JComboBox<String> zone2;
+    private javax.swing.JComboBox<String> zone3;
     // End of variables declaration//GEN-END:variables
 }
