@@ -636,7 +636,7 @@ public class FillFormInitial {
 		Class.forName("oracle.jdbc.driver.OracleDriver");
 		System.out.println("Successfully connected");
 		con = DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:xe","system","rahul");
-		String command = "Select REFERENCE,SECONDYEARHALLTICKET,MOBILENUMBER,DOB from studentfeedetails where REFERENCE =? and SECONDYEARHALLTICKET =? and MOBILENUMBER =? and DOB=?";
+		String command = "Select STUDENTNAME ,REFERENCE,SECONDYEARHALLTICKET,MOBILENUMBER,DOB from studentfeedetails where REFERENCE =? and SECONDYEARHALLTICKET =? and MOBILENUMBER =? and DOB=?";
                 sqlQuery = con.prepareStatement(command);
                 sqlQuery.setString(1,getPaymentReferenceNumber());
                 sqlQuery.setString(2,getHallTicketNumber());
@@ -645,6 +645,8 @@ public class FillFormInitial {
                 System.out.println(getPaymentReferenceNumber() +" "+getHallTicketNumber()+ " "+getMobileNumber()+" "+getDateOfBirth());
                  ResultSet set  = sqlQuery.executeQuery();
                 if(set.next()){
+                    setCandidateName(set.getString(1));
+                    setDateOfBirth(set.getString(5));
                     return true;
                 }
                 else
