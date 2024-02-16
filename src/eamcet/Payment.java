@@ -424,7 +424,7 @@ public class Payment extends javax.swing.JPanel {
             int val = JOptionPane.showOptionDialog(home2scroll, "Fee payment successful\nClick Proceed to fill the form","Permission",JOptionPane.YES_OPTION, JOptionPane.INFORMATION_MESSAGE,null, values,null);
             if(val ==0){
                
-    CardLayout cl = (CardLayout) aw.appInterface.getLayout();
+//            CardLayout cl = (CardLayout) aw.appInterface.getLayout();
             aw.appInterface.remove(this);
             aw.appInterface.add(aw.registrationPanel);
             aw.appInterface.repaint();
