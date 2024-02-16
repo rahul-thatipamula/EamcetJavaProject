@@ -4,9 +4,11 @@
  */
 package eamcet;
 
+import java.util.Enumeration;
 import javax.swing.JOptionPane;
 import javax.swing.AbstractButton;
 import javax.swing.ButtonGroup;
+import static picocli.CommandLine.Help.Ansi.Style.bg;
 
 /**
  *
@@ -98,9 +100,9 @@ public class FillOnlineApplication extends javax.swing.JFrame {
         jRadioButton4 = new javax.swing.JRadioButton();
         jRadioButton5 = new javax.swing.JRadioButton();
         jLabel20 = new javax.swing.JLabel();
-        jTextField11 = new javax.swing.JTextField();
+        casteCertificateNumberField = new javax.swing.JTextField();
         jLabel21 = new javax.swing.JLabel();
-        jTextField12 = new javax.swing.JTextField();
+        ewsNumberField = new javax.swing.JTextField();
         specialReservationCategory = new javax.swing.JPanel();
         jLabel22 = new javax.swing.JLabel();
         jCheckBox1 = new javax.swing.JCheckBox();
@@ -637,6 +639,8 @@ public class FillOnlineApplication extends javax.swing.JFrame {
             }
         });
 
+        dateOfBirthField.setEnabled(false);
+
         aadhaarNumber.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
         aadhaarNumber.setText("Adhaar card number/ Enrollment No.");
 
@@ -871,9 +875,9 @@ public class FillOnlineApplication extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 182, Short.MAX_VALUE)
                 .addGroup(categoryDetailsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(categoryDetailsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                        .addComponent(jTextField12, javax.swing.GroupLayout.PREFERRED_SIZE, 163, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(ewsNumberField, javax.swing.GroupLayout.PREFERRED_SIZE, 163, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGroup(categoryDetailsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jTextField11, javax.swing.GroupLayout.PREFERRED_SIZE, 163, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(casteCertificateNumberField, javax.swing.GroupLayout.PREFERRED_SIZE, 163, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(jLabel20)))
                     .addComponent(jLabel21))
                 .addGap(187, 187, 187))
@@ -899,7 +903,7 @@ public class FillOnlineApplication extends javax.swing.JFrame {
                             .addComponent(bcd)
                             .addComponent(sc)
                             .addComponent(st)
-                            .addComponent(jTextField11, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addComponent(casteCertificateNumberField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addGap(35, 35, 35)
                         .addComponent(jLabel19)
                         .addGap(18, 18, 18)
@@ -910,7 +914,7 @@ public class FillOnlineApplication extends javax.swing.JFrame {
                         .addGap(53, 53, 53)
                         .addComponent(jLabel21)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(jTextField12, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addComponent(ewsNumberField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
@@ -3584,9 +3588,13 @@ public class FillOnlineApplication extends javax.swing.JFrame {
                  this.add(modify);
                  this.repaint();
                  this.revalidate();
-                 candidateNameField.setText("hello");
-                 setFillFormInitialReference(ffi);
-       }
+                 candidateNameField.setText(ffi.getCandidateName());
+                 dateOfBirthField.setText(ffi.getDateOfBirth());
+                 setFillFormInitialReference(ffi);                
+            }
+            else{
+                JOptionPane.showMessageDialog(null, "Student details not found", "Details Not Found", JOptionPane.INFORMATION_MESSAGE);
+            }
        }
        
        
@@ -3676,31 +3684,52 @@ public class FillOnlineApplication extends javax.swing.JFrame {
     }//GEN-LAST:event_jTextField16ActionPerformed
 
     private void saveActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_saveActionPerformed
-        
-       setStudentData(ffi);
-        
-        
+       setStudentData(ffi);    
     }//GEN-LAST:event_saveActionPerformed
 
     private void aadhaarNumberFieldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_aadhaarNumberFieldActionPerformed
-        // TODO add your handling code here:
+       
     }//GEN-LAST:event_aadhaarNumberFieldActionPerformed
 
     
     public void setStudentData(FillFormInitial ffi){
 //      ffi.setCandidateName();
-        ffi.setFatherName(fatherName.getText());
-        ffi.setMotherName(motherName.getText());
-        ffi.setDateOfBirth(dateOfBirth.getText());
+        ffi.setFatherName(fatherNameField.getText());
+        ffi.setMotherName(motherNameField.getText());
+        ffi.setDateOfBirth(dateOfBirthField.getText());
         ffi.setAadhaarCardNumber(aadhaarNumberField.getText());
-        ffi.setRationCardNumber(rationCardNumber.getText());
-        ffi.setBirthState(birthState.getText());
-//        ffi.setGender((String)gender.getSelectedItem());
-//        ffi.setCategory(category);
-//        ffi.setWeakerSection(weakerSection);
-//        ffi.setCasteCertificateNumber(casteCertificateNumber);
-//        ffi.setEwsNumber(ewsNumber);
-//        ffi.setSpecialReservation(specialReservation);
+        ffi.setRationCardNumber(rationCardNumberField.getText());
+        ffi.setBirthState((String)birthStateField.getSelectedItem());
+         Enumeration<AbstractButton> buttons = gender.getElements();
+                while (buttons.hasMoreElements()) {
+                    AbstractButton button = buttons.nextElement();
+                    if (button.isSelected()) {
+                        ffi.setGender(button.getText());
+                        break;
+                    }
+                }
+          buttons = category.getElements();
+            while (buttons.hasMoreElements()) {
+                    AbstractButton button = buttons.nextElement();
+                    if (button.isSelected()) {
+                        ffi.setCategory(button.getText());
+                        break;
+                    }
+                }
+          
+          
+             buttons = weakerSection.getElements();
+            while (buttons.hasMoreElements()) {
+                    AbstractButton button = buttons.nextElement();
+                    if (button.isSelected()) {
+                        ffi.setWeakerSection(button.getText());
+                        break;
+                    }
+                }
+
+       ffi.setCasteCertificateNumber(casteCertificateNumberField.getText());
+       ffi.setEwsNumber(ewsNumberField.getText());
+       ffi.setSpecialReservation("");
 //        ffi.setPh(ph);
 //        ffi.setScribe(scribe);
 //        ffi.setSadaramNumber(sadaramNumber);
@@ -3751,9 +3780,20 @@ public class FillOnlineApplication extends javax.swing.JFrame {
 //        ffi.setTestZone1(testZone1);
 //        ffi.setTestZone2(testZone2);
 //        ffi.setTestZone3(testZone3);
-        
+
+      SaveApplicationForm saveApplicationForm =  new  SaveApplicationForm(ffi);
+      int confirmSave = saveApplicationForm.startSave();
+      if(confirmSave ==1){
+          Object [] options = {"ok"};
+          int x  =JOptionPane.showOptionDialog(null, "Application saved Successfully", "Save Status", JOptionPane.YES_OPTION, JOptionPane.INFORMATION_MESSAGE, null, options, incomeRange);
+          if(x==0){
+              this.dispose();
+              awf.setEnabled(true);
+              awf.show();
+          }
+      }
     }
-    FillFormInitial ffi=null;
+      FillFormInitial ffi=null;
       public void setFillFormInitialReference(FillFormInitial ffi){
           this.ffi = ffi;
       }
@@ -3834,6 +3874,7 @@ public class FillOnlineApplication extends javax.swing.JFrame {
     private javax.swing.JLabel candidateDetailsHead;
     private javax.swing.JLabel candidateName;
     private javax.swing.JTextField candidateNameField;
+    private javax.swing.JTextField casteCertificateNumberField;
     private javax.swing.ButtonGroup category;
     private javax.swing.JPanel categoryDetails;
     private javax.swing.JPanel categoryDetails1;
@@ -3843,6 +3884,7 @@ public class FillOnlineApplication extends javax.swing.JFrame {
     private javax.swing.JTextField dateOfBirthField;
     private javax.swing.JPanel detailsOfCommanTest;
     private javax.swing.JPanel detailsOfCommanTest1;
+    private javax.swing.JTextField ewsNumberField;
     private javax.swing.JLabel fatherName;
     private javax.swing.JTextField fatherNameField;
     private javax.swing.JRadioButton female;
@@ -4133,8 +4175,6 @@ public class FillOnlineApplication extends javax.swing.JFrame {
     private javax.swing.JRadioButton jRadioButton8;
     private javax.swing.JRadioButton jRadioButton9;
     private javax.swing.JScrollBar jScrollBar1;
-    private javax.swing.JTextField jTextField11;
-    private javax.swing.JTextField jTextField12;
     private javax.swing.JTextField jTextField13;
     private javax.swing.JTextField jTextField14;
     private javax.swing.JTextField jTextField15;
