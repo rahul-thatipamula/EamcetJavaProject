@@ -19,10 +19,14 @@ import javax.swing.JOptionPane;
  */
 public class SaveApplicationForm {
     static FillFormInitial ffi = null;
-
-    public SaveApplicationForm(FillFormInitial ffi) {
+String tableName;
+    public SaveApplicationForm(FillFormInitial ffi,String tableName) {
         this.ffi = ffi;
+        this.tableName=tableName;
 
+    }
+    public void setNewTableName(String tableName){
+        this.tableName = tableName;
     }
     
   public int startSave(){
@@ -34,7 +38,7 @@ public class SaveApplicationForm {
 		con = DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:xe","system","rahul");
                
 		ResultSet set  = null;
-               String query = "INSERT INTO STUDENTTEMPFORMDATA VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)";
+               String query = "INSERT INTO "+tableName+" VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)";
                 preparedStatement = con.prepareStatement(query);
 
 
@@ -48,7 +52,7 @@ public class SaveApplicationForm {
             preparedStatement.setString(8, ffi.getGender());
             preparedStatement.setString(9, ffi.getCategory());
             preparedStatement.setString(10, ffi.getWeakerSection());
-preparedStatement.setString(11, ffi.getCasteCertificateNumber());
+            preparedStatement.setString(11, ffi.getCasteCertificateNumber());
 preparedStatement.setString(12, ffi.getEwsNumber());
 preparedStatement.setString(13, ffi.getSpecialReservation());
 preparedStatement.setString(14, ffi.getPh());

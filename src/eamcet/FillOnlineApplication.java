@@ -2096,7 +2096,7 @@ public class FillOnlineApplication extends javax.swing.JFrame {
             }
         });
 
-        next.setText("NEXT");
+        next.setText("submit");
         next.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 nextActionPerformed(evt);
@@ -3562,45 +3562,7 @@ public class FillOnlineApplication extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void modifyButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_modifyButtonActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_modifyButtonActionPerformed
-
-    private void jRadioButton51ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jRadioButton51ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jRadioButton51ActionPerformed
-
-    private void jRadioButton50ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jRadioButton50ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jRadioButton50ActionPerformed
-
-    private void jRadioButton49ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jRadioButton49ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jRadioButton49ActionPerformed
-
-    private void jRadioButton48ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jRadioButton48ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jRadioButton48ActionPerformed
-
-    private void jRadioButton47ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jRadioButton47ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jRadioButton47ActionPerformed
-
-    private void jCheckBox12ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jCheckBox12ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jCheckBox12ActionPerformed
-
-    private void bcc1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bcc1ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_bcc1ActionPerformed
-
-    private void oc1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_oc1ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_oc1ActionPerformed
-
     private void proceedButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_proceedButtonActionPerformed
-        // TODO add your handling code here:
-        
        FillFormInitial ffi = new FillFormInitial();
        if(paymentReference1.getText()!=null && dateOfBirth1.getText() !=null &&  hallTicket1.getText()!=null && mobileNumber1.getText()!=null){
             ffi.setData(paymentReference1.getText(),dateOfBirth1.getText(),  hallTicket1.getText(), mobileNumber1.getText());
@@ -3612,6 +3574,11 @@ public class FillOnlineApplication extends javax.swing.JFrame {
                  candidateNameField.setText(ffi.getCandidateName());
                  dateOfBirthField.setText(ffi.getDateOfBirth());
                  setFillFormInitialReference(ffi);                
+                 
+                 if(checkDataPresence())
+                 
+                 
+                 
             }
             else{
                 JOptionPane.showMessageDialog(null, "Student details not found", "Details Not Found", JOptionPane.INFORMATION_MESSAGE);
@@ -3697,7 +3664,231 @@ public class FillOnlineApplication extends javax.swing.JFrame {
     }//GEN-LAST:event_streamAppliedFieldActionPerformed
 
     private void nextActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_nextActionPerformed
-        // TODO add your handling code here:
+        ffi.setCandidateName(candidateNameField.getText());
+        ffi.setFatherName(fatherNameField.getText());
+        ffi.setMotherName(motherNameField.getText());
+        ffi.setDateOfBirth(dateOfBirthField.getText());
+        ffi.setAadhaarCardNumber(aadhaarNumberField.getText());
+        ffi.setRationCardNumber(rationCardNumberField.getText());
+        ffi.setBirthState((String)birthStateField.getSelectedItem());
+         Enumeration<AbstractButton> buttons = gender.getElements();
+                while (buttons.hasMoreElements()) {
+                    AbstractButton button = buttons.nextElement();
+                    if (button.isSelected()) {
+                        ffi.setGender(button.getText());
+                        break;
+                    }
+                }
+          buttons = category.getElements();
+            while (buttons.hasMoreElements()) {
+                    AbstractButton button = buttons.nextElement();
+                    if (button.isSelected()) {
+                        ffi.setCategory(button.getText());
+                        break;
+                    }
+                }
+          
+          
+             buttons = weakerSection.getElements();
+            while (buttons.hasMoreElements()) {
+                    AbstractButton button = buttons.nextElement();
+                    if (button.isSelected()) {
+                        ffi.setWeakerSection(button.getText());
+                        break;
+                    }
+                }
+
+       ffi.setCasteCertificateNumber(casteCertificateNumberField.getText());
+       ffi.setEwsNumber(ewsNumberField.getText());
+       StringBuffer phArray = new StringBuffer("");
+       StringBuffer specialReservationArray = new StringBuffer("");
+        buttons = specialReservation.getElements();
+            while (buttons.hasMoreElements()) {
+                    AbstractButton button = buttons.nextElement();
+                    if (button.isSelected()) {
+                       specialReservationArray.append(button.getText()+",");
+                    }
+                }
+       
+       ffi.setSpecialReservation(new String(specialReservationArray));
+        buttons = ph.getElements();
+            while (buttons.hasMoreElements()) {
+                    AbstractButton button = buttons.nextElement();
+                    if (button.isSelected()) {
+                       phArray.append(button.getText()+",");
+                }
+            }
+    
+        ffi.setPh(new String(phArray));
+            buttons = scribe.getElements();
+            while (buttons.hasMoreElements()) {
+                    AbstractButton button = buttons.nextElement();
+                    if (button.isSelected()) {
+                        ffi.setScribe(button.getText());
+                        break;
+                    }
+                }
+        ffi.setSadaramNumber(sadaramNumberField.getText());
+                buttons = minority.getElements();
+            while (buttons.hasMoreElements()) {
+                    AbstractButton button = buttons.nextElement();
+                    if (button.isSelected()) {
+                        ffi.setMinority(button.getText());
+                        break;
+                    }
+                }
+
+                buttons = annualIncome.getElements();
+            while (buttons.hasMoreElements()) {
+                    AbstractButton button = buttons.nextElement();
+                    if (button.isSelected()) {
+                        ffi.setAnnualIncome(button.getText());
+                        break;
+                    }
+                }
+
+        ffi.setIncomeCertificateNumber(incomeCertificateField.getText());
+        ffi.setNameAsInBankAccount(bankAccountNameField.getText());
+        ffi.setAccountNumber(accountNumberField.getText());
+        ffi.setIfscCode(ifscCodeField.getText());
+        ffi.setHouseNumber(houseNumberField.getText());
+        ffi.setVillageOrStreet(villageOrStreetField.getText());
+        ffi.setMandalOrTown(mandalOrTownField.getText());
+        ffi.setDistrict(districtField.getText());
+        ffi.setState(stateField.getText());
+        ffi.setPincode(pincodeField.getText());
+        ffi.setMobileNumber(mobileNumberField.getText());
+        ffi.setAlternateMobileNumber(altMobileNumberField.getText());
+        ffi.setLandlineNumber(landlineField.getText());
+        ffi.setEmailId(emailField.getText());
+           buttons = area.getElements();
+            while (buttons.hasMoreElements()) {
+                    AbstractButton button = buttons.nextElement();
+                    if (button.isSelected()) {
+                        ffi.setIntermediate(button.getText());
+                        break;
+                    }
+                }
+      
+               buttons = typeOfExam.getElements();
+            while (buttons.hasMoreElements()) {
+                    AbstractButton button = buttons.nextElement();
+                    if (button.isSelected()) {
+                        ffi.setTypeOfExam(button.getText());
+                        break;
+                    }
+                }
+               buttons = qualifyExamSubjects.getElements();
+            while (buttons.hasMoreElements()) {
+                    AbstractButton button = buttons.nextElement();
+                    if (button.isSelected()) {
+                        ffi.setGroupSubject(button.getText());
+                        break;
+                    }
+                }
+           ffi.setInterHallticketNumber(interHallTicketField.getText());
+        ffi.setInterYearOfPassing((String)interYearOfPassingField.getSelectedItem());
+        ffi.setDiplomaStudied((String)diplomaStudiedField.getSelectedItem());
+           ffi.setBridgeCourseHallTicketNumber(bridgeCourseHallticketField.getText());
+              buttons = instructionMedium.getElements();
+            while (buttons.hasMoreElements()) {
+                    AbstractButton button = buttons.nextElement();
+                    if (button.isSelected()) {
+                        ffi.setMediumOfInst(button.getText());
+                        break;
+                    }
+                }
+             buttons = testMedium.getElements();
+            while (buttons.hasMoreElements()) {
+                    AbstractButton button = buttons.nextElement();
+                    if (button.isSelected()) {
+                        ffi.setMediumOfTest(button.getText());
+                        break;
+                    }
+                }
+            
+               buttons = sscArea.getElements();
+            while (buttons.hasMoreElements()) {
+                    AbstractButton button = buttons.nextElement();
+                    if (button.isSelected()) {
+                        ffi.setSscArea(button.getText());
+                        break;
+                    }
+                }
+            
+        ffi.setSscHallticketNumber(sscHallTicketField.getText());
+        ffi.setSscMonth(sscPassYearField.getText());
+        ffi.setSscYearOfPassing(sscPassYearField.getText());
+        ffi.setClass1((String)class1.getSelectedItem());
+        ffi.setClass2((String)class2.getSelectedItem());
+        ffi.setClass3((String)class3.getSelectedItem());
+        ffi.setClass4((String)class4.getSelectedItem());
+        ffi.setClass5((String)class5.getSelectedItem());
+        ffi.setClass6((String)class6.getSelectedItem());
+        ffi.setClass7((String)class7.getSelectedItem());
+        ffi.setClass8((String)class8.getSelectedItem());
+        ffi.setClass9((String)class9.getSelectedItem());
+        ffi.setClass10((String)class10.getSelectedItem());
+        ffi.setInterClass1((String)inter1stYear.getSelectedItem());
+        ffi.setInterClass2((String)inter2ndYear.getSelectedItem());
+        ffi.setLocalArea((String)localAreaField.getSelectedItem());
+       
+          buttons = localArea.getElements();
+            while (buttons.hasMoreElements()) {
+                    AbstractButton button = buttons.nextElement();
+                    if (button.isSelected()) {
+                        ffi.setSelectLocalArea(button.getText());
+                        break;
+                    }
+                }
+        ffi.setStreamApplied(streamAppliedField.getText());
+        ffi.setTestZone1((String)zone1.getSelectedItem());
+        ffi.setTestZone2((String)zone2.getSelectedItem());
+        ffi.setTestZone3((String)zone3.getSelectedItem());
+        
+        if (ffi.getCandidateName() != null && ffi.getFatherName() != null && ffi.getMotherName() != null && 
+    ffi.getDateOfBirth() != null && ffi.getAadhaarCardNumber() != null && ffi.getRationCardNumber() != null &&
+    ffi.getBirthState() != null && ffi.getGender() != null && ffi.getCategory() != null && 
+    ffi.getWeakerSection() != null && ffi.getCasteCertificateNumber() != null && 
+    ffi.getSpecialReservation() != null && ffi.getMinority() != null && ffi.getAnnualIncome() != null && 
+    ffi.getNameAsInBankAccount() != null && ffi.getAccountNumber() != null && ffi.getIfscCode() != null &&
+    ffi.getHouseNumber() != null && ffi.getVillageOrStreet() != null && ffi.getMandalOrTown() != null && 
+    ffi.getDistrict() != null && ffi.getState() != null && ffi.getPincode() != null && 
+    ffi.getMobileNumber() != null && ffi.getAlternateMobileNumber() != null && 
+    ffi.getLandlineNumber() != null && ffi.getEmailId() != null && ffi.getIntermediate() != null && 
+    ffi.getTypeOfExam() != null && ffi.getGroupSubject() != null && 
+    ffi.getInterHallticketNumber() != null && ffi.getInterYearOfPassing() != null && 
+    ffi.getDiplomaStudied() != null && ffi.getBridgeCourseHallTicketNumber() != null && 
+    ffi.getMediumOfInst() != null && ffi.getMediumOfTest() != null && ffi.getSscArea() != null && 
+    ffi.getSscHallticketNumber() != null && ffi.getSscMonth() != null && ffi.getSscYearOfPassing() != null && 
+    ffi.getClass1() != null && ffi.getClass2() != null && ffi.getClass3() != null && 
+    ffi.getClass4() != null && ffi.getClass5() != null && ffi.getClass6() != null && 
+    ffi.getClass7() != null && ffi.getClass8() != null && ffi.getClass9() != null && 
+    ffi.getClass10() != null && ffi.getInterClass1() != null && ffi.getInterClass2() != null && 
+    ffi.getLocalArea() != null && ffi.getSelectLocalArea() != null && 
+    ffi.getStreamApplied() != null && ffi.getTestZone1() != null && 
+    ffi.getTestZone2() != null && ffi.getTestZone3() != null && 
+    ffi.getPaymentReferenceNumber() != null) {
+          
+          saveApplicationForm =  new SaveApplicationForm(ffi, "STUDENTFORMDETAILS");
+      int confirmSave = saveApplicationForm.startSave();
+     
+      if(confirmSave ==1){
+          Object [] options = {"ok"};
+          int x  =JOptionPane.showOptionDialog(null, "Application submitted Successfully", "Submit Status", JOptionPane.YES_OPTION, JOptionPane.INFORMATION_MESSAGE, null, options, incomeRange);
+          if(x==0){
+              this.dispose();
+              awf.setEnabled(true);
+              awf.show();
+          }
+      }
+      else
+      {
+          JOptionPane.showMessageDialog(null, "Enter all fields");
+      }
+          
+}
+
     }//GEN-LAST:event_nextActionPerformed
 
     private void accountNumberFieldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_accountNumberFieldActionPerformed
@@ -3722,7 +3913,47 @@ public class FillOnlineApplication extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_zone2ActionPerformed
 
-    
+    private void modifyButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_modifyButtonActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_modifyButtonActionPerformed
+
+    private void jRadioButton51ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jRadioButton51ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jRadioButton51ActionPerformed
+
+    private void jRadioButton50ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jRadioButton50ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jRadioButton50ActionPerformed
+
+    private void jRadioButton49ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jRadioButton49ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jRadioButton49ActionPerformed
+
+    private void jRadioButton48ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jRadioButton48ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jRadioButton48ActionPerformed
+
+    private void jRadioButton47ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jRadioButton47ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jRadioButton47ActionPerformed
+
+    private void jCheckBox12ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jCheckBox12ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jCheckBox12ActionPerformed
+
+    private void bcc1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bcc1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_bcc1ActionPerformed
+
+    private void oc1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_oc1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_oc1ActionPerformed
+
+    public boolean checkDataPresence(){
+//        ffi.getPaymentReferenceNumber();
+//        ffi.getDateOfBirth();
+//        ffi.get
+    }
     public void setStudentData(FillFormInitial ffi){
 //      ffi.setCandidateName();
         ffi.setFatherName(fatherNameField.getText());
@@ -3760,7 +3991,7 @@ public class FillOnlineApplication extends javax.swing.JFrame {
 
        ffi.setCasteCertificateNumber(casteCertificateNumberField.getText());
        ffi.setEwsNumber(ewsNumberField.getText());
-       StringBuffer phArray= new StringBuffer("");
+       StringBuffer phArray = new StringBuffer("");
        StringBuffer specialReservationArray = new StringBuffer("");
         buttons = specialReservation.getElements();
             while (buttons.hasMoreElements()) {
@@ -3776,9 +4007,9 @@ public class FillOnlineApplication extends javax.swing.JFrame {
                     AbstractButton button = buttons.nextElement();
                     if (button.isSelected()) {
                        phArray.append(button.getText()+",");
-                    }
                 }
-       
+            }
+    
         ffi.setPh(new String(phArray));
             buttons = scribe.getElements();
             while (buttons.hasMoreElements()) {
@@ -3906,7 +4137,7 @@ public class FillOnlineApplication extends javax.swing.JFrame {
         ffi.setTestZone2((String)zone2.getSelectedItem());
         ffi.setTestZone3((String)zone3.getSelectedItem());
 
-      SaveApplicationForm saveApplicationForm =  new  SaveApplicationForm(ffi);
+       saveApplicationForm =  new  SaveApplicationForm(ffi,"STUDENTTEMPFORMDATA");
       int confirmSave = saveApplicationForm.startSave();
       if(confirmSave ==1){
           Object [] options = {"ok"};
@@ -3918,6 +4149,7 @@ public class FillOnlineApplication extends javax.swing.JFrame {
           }
       }
     }
+    SaveApplicationForm saveApplicationForm =null;
       FillFormInitial ffi=null;
       public void setFillFormInitialReference(FillFormInitial ffi){
           this.ffi = ffi;
