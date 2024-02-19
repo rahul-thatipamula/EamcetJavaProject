@@ -4,11 +4,15 @@
  */
 package eamcet;
 
+import java.sql.DriverManager;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.util.Arrays;
 import java.util.Enumeration;
 import javax.swing.JOptionPane;
 import javax.swing.AbstractButton;
 import javax.swing.ButtonGroup;
-import static picocli.CommandLine.Help.Ansi.Style.bg;
 
 /**
  *
@@ -3567,16 +3571,38 @@ public class FillOnlineApplication extends javax.swing.JFrame {
        if(paymentReference1.getText()!=null && dateOfBirth1.getText() !=null &&  hallTicket1.getText()!=null && mobileNumber1.getText()!=null){
             ffi.setData(paymentReference1.getText(),dateOfBirth1.getText(),  hallTicket1.getText(), mobileNumber1.getText());
             if(ffi.validateData()){
-                 this.remove(FillDetails);
-                 this.add(modify);
-                 this.repaint();
-                 this.revalidate();
                  candidateNameField.setText(ffi.getCandidateName());
                  dateOfBirthField.setText(ffi.getDateOfBirth());
+                 ffi.setCandidateName(candidateNameField.getText());
+                 ffi.setDateOfBirth(dateOfBirthField.getText());
                  setFillFormInitialReference(ffi);                
                  
-                 if(checkDataPresence())
-                 
+                 if(checkDataPresence("STUDENTFORMDETAILS")){
+                      Object [] options = {"ok"};
+                        int x  =JOptionPane.showOptionDialog(null, "You already filled the application", "Fill-Error", JOptionPane.YES_OPTION, JOptionPane.INFORMATION_MESSAGE, null, options, incomeRange);
+                     if(x==0){
+                        this.dispose();
+                         awf.setEnabled(true);
+                         awf.show();
+                    }
+                 }
+                 else{
+               
+                 if(checkDataPresence("STUDENTTEMPFORMDATA")){
+              
+                    this.remove(FillDetails);
+                    this.add(modify);
+                    this.repaint();
+                    this.revalidate();
+                    setSavedData();
+                 }
+                 else{
+                    this.remove(FillDetails);
+                    this.add(modify);
+                    this.repaint();
+                    this.revalidate();
+                 }
+                 }
                  
                  
             }
@@ -3586,7 +3612,7 @@ public class FillOnlineApplication extends javax.swing.JFrame {
        }
        
        
-      
+     
     
     }//GEN-LAST:event_proceedButtonActionPerformed
 
@@ -3877,7 +3903,28 @@ public class FillOnlineApplication extends javax.swing.JFrame {
           Object [] options = {"ok"};
           int x  =JOptionPane.showOptionDialog(null, "Application submitted Successfully", "Submit Status", JOptionPane.YES_OPTION, JOptionPane.INFORMATION_MESSAGE, null, options, incomeRange);
           if(x==0){
+              
               this.dispose();
+                java.sql.Connection con;
+		 PreparedStatement sqlQuery;
+		try {
+                    
+		con = DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:xe","system","rahul");
+		String command = "delete from STUDENTTEMPFORMDATA WHERE PAYMENTREFERENCE =? and CANDIDATENAME =? and DATEOFBIRTH=?";
+
+                sqlQuery = con.prepareStatement(command);
+                sqlQuery.setString(1,ffi.getPaymentReferenceNumber());
+                sqlQuery.setString(2,ffi.getCandidateName());
+                sqlQuery.setString(3,ffi.getDateOfBirth());
+
+     
+                int y =  sqlQuery.executeUpdate();
+               
+                
+                }
+                catch(SQLException sql){
+                    sql.printStackTrace();
+                }
               awf.setEnabled(true);
               awf.show();
           }
@@ -3949,11 +3996,354 @@ public class FillOnlineApplication extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_oc1ActionPerformed
 
-    public boolean checkDataPresence(){
-//        ffi.getPaymentReferenceNumber();
-//        ffi.getDateOfBirth();
-//        ffi.get
+    public boolean checkDataPresence(String tableName){
+        
+                 java.sql.Connection con;
+		 PreparedStatement sqlQuery;
+		try {
+		Class.forName("oracle.jdbc.driver.OracleDriver");
+		con = DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:xe","system","rahul");
+		String command = "Select CANDIDATENAME,PAYMENTREFERENCE,INTERHALLTICKETNUMBER,DATEOFBIRTH from "+tableName+" where PAYMENTREFERENCE =? and INTERHALLTICKETNUMBER =? and DATEOFBIRTH=?";
+                sqlQuery = con.prepareStatement(command);
+                sqlQuery.setString(1,ffi.getPaymentReferenceNumber());
+                sqlQuery.setString(2,ffi.getHallTicketNumber());
+                sqlQuery.setString(3,ffi.getDateOfBirth());
+     
+                 ResultSet set  = sqlQuery.executeQuery();
+                if(set.next()){
+                    
+                    return true;
+                }
+                else
+                    return false;
+                
+}
+                catch(SQLException e){
+                    e.printStackTrace();
+                    
+                }
+                catch(ClassNotFoundException cnfe){
+                    cnfe.printStackTrace();
+                }
+        return false;
+        
+        
+        
     }
+    
+     void setSavedData(){
+        
+             java.sql.Connection con;
+		 PreparedStatement sqlQuery;
+		try {
+                    
+
+		con = DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:xe","system","rahul");
+        
+		String command = "Select *  from STUDENTTEMPFORMDATA where PAYMENTREFERENCE =?  and DATEOFBIRTH=?";
+                sqlQuery = con.prepareStatement(command);
+                sqlQuery.setString(1,ffi.getPaymentReferenceNumber());
+                sqlQuery.setString(2,ffi.getDateOfBirth());
+
+     
+                 ResultSet set  = sqlQuery.executeQuery();
+                if(set.next()){
+                 
+                  ffi.setCandidateName(set.getString(1));
+ffi.setFatherName(set.getString(2));
+ffi.setMotherName(set.getString(3));
+ffi.setDateOfBirth(set.getString(4));
+ffi.setAadhaarCardNumber(set.getString(5));
+ffi.setRationCardNumber(set.getString(6));
+ffi.setBirthState(set.getString(7));
+ffi.setGender(set.getString(8));
+ffi.setCategory(set.getString(9));
+ffi.setWeakerSection(set.getString(10));
+ffi.setCasteCertificateNumber(set.getString(11));
+ffi.setEwsNumber(set.getString(12));
+ffi.setSpecialReservation(set.getString(13));
+ffi.setPh(set.getString(14));
+ffi.setScribe(set.getString(15));
+ffi.setSadaramNumber(set.getString(16));
+ffi.setMinority(set.getString(17));
+ffi.setAnnualIncome(set.getString(18));
+ffi.setIncomeCertificateNumber(set.getString(19));
+ffi.setNameAsInBankAccount(set.getString(20));
+ffi.setAccountNumber(set.getString(21));
+ffi.setIfscCode(set.getString(22));
+ffi.setHouseNumber(set.getString(23));
+ffi.setVillageOrStreet(set.getString(24));
+ffi.setMandalOrTown(set.getString(25));
+ffi.setDistrict(set.getString(26));
+ffi.setState(set.getString(27));
+ffi.setPincode(set.getString(28));
+ffi.setMobileNumber(set.getString(29));
+ffi.setAlternateMobileNumber(set.getString(30));
+ffi.setLandlineNumber(set.getString(31));
+ffi.setEmailId(set.getString(32));
+ffi.setIntermediate(set.getString(33));
+ffi.setTypeOfExam(set.getString(34));
+ffi.setGroupSubject(set.getString(35));
+ffi.setInterHallticketNumber(set.getString(36));
+ffi.setInterYearOfPassing(set.getString(37));
+ffi.setDiplomaStudied(set.getString(38));
+ffi.setBridgeCourseHallTicketNumber(set.getString(39));
+ffi.setMediumOfInst(set.getString(40));
+ffi.setMediumOfTest(set.getString(41));
+ffi.setSscArea(set.getString(42));
+ffi.setSscHallticketNumber(set.getString(43));
+ffi.setSscMonth(set.getString(44));
+ffi.setSscYearOfPassing(set.getString(45));
+ffi.setClass1(set.getString(46));
+ffi.setClass2(set.getString(47));
+ffi.setClass3(set.getString(48));
+ffi.setClass4(set.getString(49));
+ffi.setClass5(set.getString(50));
+ffi.setClass6(set.getString(51));
+ffi.setClass7(set.getString(52));
+ffi.setClass8(set.getString(53));
+ffi.setClass9(set.getString(54));
+ffi.setClass10(set.getString(55));
+ffi.setInterClass1(set.getString(56));
+ffi.setInterClass2(set.getString(57));
+ffi.setLocalArea(set.getString(58));
+ffi.setSelectLocalArea(set.getString(59));
+ffi.setStreamApplied(set.getString(60));
+ffi.setTestZone1(set.getString(61));
+ffi.setTestZone2(set.getString(62));
+ffi.setTestZone3(set.getString(63));
+ffi.setPaymentReferenceNumber(set.getString(64));
+
+                    candidateNameField.setText(ffi.getCandidateName());
+                    fatherNameField.setText(ffi.getFatherName());
+                    motherNameField.setText(ffi.getMotherName());
+                    
+               
+dateOfBirthField.setText(ffi.getDateOfBirth());
+aadhaarNumberField.setText(ffi.getAadhaarCardNumber());
+rationCardNumberField.setText(ffi.getRationCardNumber());
+birthStateField.setSelectedItem(ffi.getBirthState());
+
+// Set the selected gender
+Enumeration<AbstractButton> genderButtons = gender.getElements();
+while (genderButtons.hasMoreElements()) {
+    AbstractButton button = genderButtons.nextElement();
+    if (button.getText().equals(ffi.getGender())) {
+        button.setSelected(true);
+        break;
+    }
+}
+
+// Set the selected category
+Enumeration<AbstractButton> categoryButtons = category.getElements();
+while (categoryButtons.hasMoreElements()) {
+    AbstractButton button = categoryButtons.nextElement();
+    if (button.getText().equals(ffi.getCategory())) {
+        button.setSelected(true);
+        break;
+    }
+}
+
+// Set the selected weaker section
+Enumeration<AbstractButton> weakerSectionButtons = weakerSection.getElements();
+while (weakerSectionButtons.hasMoreElements()) {
+    AbstractButton button = weakerSectionButtons.nextElement();
+    if (button.getText().equals(ffi.getWeakerSection())) {
+        button.setSelected(true);
+        break;
+    }
+}
+
+casteCertificateNumberField.setText(ffi.getCasteCertificateNumber());
+ewsNumberField.setText(ffi.getEwsNumber());
+
+
+
+
+
+
+//
+//String specialReservation = ffi.getSpecialReservation();
+////String[] specialReservationArray = specialReservation.split(",");
+//Enumeration<AbstractButton> specialReservationButtons = specialReservation.getElements();
+//while (specialReservationButtons.hasMoreElements()) {
+//    int i =0;
+//    AbstractButton button = specialReservationButtons.nextElemenst();
+//    if (button.getText().equals(specialReservation)) {
+//        button.setSelected(true);
+//        break;
+//    }
+//    i++;
+//}
+//
+//// Set the selected PH
+//String ph1 = ffi.getPh();
+//String[] phArray = ph1.split(",");
+//Enumeration<AbstractButton> phButtons = ph.getElements();
+//while (phButtons.hasMoreElements()) {
+//    AbstractButton button = phButtons.nextElement();
+//    if (Arrays.asList(phArray).contains(button.getText())) {
+//        button.setSelected(true);
+//    }
+//}
+
+
+Enumeration<AbstractButton> scribeButton = scribe.getElements();
+while (scribeButton.hasMoreElements()) {
+    AbstractButton button = scribeButton.nextElement();
+    if (button.getText().equals(ffi.getScribe())) {
+        button.setSelected(true);
+        break;
+    }
+}
+sadaramNumberField.setText(ffi.getSadaramNumber());
+
+// Set the selected minority
+Enumeration<AbstractButton> minorityButtons = minority.getElements();
+while (minorityButtons.hasMoreElements()) {
+    AbstractButton button = minorityButtons.nextElement();
+    if (button.getText().equals(ffi.getMinority())) {
+        button.setSelected(true);
+        break;
+    }
+}
+
+// Set the selected annual income
+Enumeration<AbstractButton> annualIncomeButtons = annualIncome.getElements();
+while (annualIncomeButtons.hasMoreElements()) {
+    AbstractButton button = annualIncomeButtons.nextElement();
+    if (button.getText().equals(ffi.getAnnualIncome())) {
+        button.setSelected(true);
+        break;
+    }
+}
+
+incomeCertificateField.setText(ffi.getIncomeCertificateNumber());
+bankAccountNameField.setText(ffi.getNameAsInBankAccount());
+accountNumberField.setText(ffi.getAccountNumber());
+ifscCodeField.setText(ffi.getIfscCode());
+houseNumberField.setText(ffi.getHouseNumber());
+villageOrStreetField.setText(ffi.getVillageOrStreet());
+mandalOrTownField.setText(ffi.getMandalOrTown());
+districtField.setText(ffi.getDistrict());
+stateField.setText(ffi.getState());
+pincodeField.setText(ffi.getPincode());
+mobileNumberField.setText(ffi.getMobileNumber());
+altMobileNumberField.setText(ffi.getAlternateMobileNumber());
+landlineField.setText(ffi.getLandlineNumber());
+emailField.setText(ffi.getEmailId());
+
+// Set the selected intermediate
+Enumeration<AbstractButton> intermediateButtons = area.getElements();
+while (intermediateButtons.hasMoreElements()) {
+    AbstractButton button = intermediateButtons.nextElement();
+    if (button.getText().equals(ffi.getIntermediate())) {
+        button.setSelected(true);
+        break;
+    }
+}
+
+// Set the selected type of exam
+Enumeration<AbstractButton> typeOfExamButtons = typeOfExam.getElements();
+while (typeOfExamButtons.hasMoreElements()) {
+    AbstractButton button = typeOfExamButtons.nextElement();
+    if (button.getText().equals(ffi.getTypeOfExam())) {
+        button.setSelected(true);
+        break;
+    }
+}
+
+// Set the selected group subject
+Enumeration<AbstractButton> groupSubjectButtons = qualifyExamSubjects.getElements();
+while (groupSubjectButtons.hasMoreElements()) {
+    AbstractButton button = groupSubjectButtons.nextElement();
+    if (button.getText().equals(ffi.getGroupSubject())) {
+        button.setSelected(true);
+        break;
+    }
+}
+
+interHallTicketField.setText(ffi.getInterHallticketNumber());
+interYearOfPassingField.setSelectedItem(ffi.getInterYearOfPassing());
+diplomaStudiedField.setSelectedItem(ffi.getDiplomaStudied());
+bridgeCourseHallticketField.setText(ffi.getBridgeCourseHallTicketNumber());
+
+// Set the selected medium of instruction
+Enumeration<AbstractButton> instructionMediumButtons = instructionMedium.getElements();
+while (instructionMediumButtons.hasMoreElements()) {
+    AbstractButton button = instructionMediumButtons.nextElement();
+    if (button.getText().equals(ffi.getMediumOfInst())) {
+        button.setSelected(true);
+        break;
+    }
+}
+
+// Set the selected medium of test
+Enumeration<AbstractButton> testMediumButtons = testMedium.getElements();
+while (testMediumButtons.hasMoreElements()) {
+    AbstractButton button = testMediumButtons.nextElement();
+    if (button.getText().equals(ffi.getMediumOfTest())) {
+        button.setSelected(true);
+        break;
+    }
+}
+
+// Set the selected SSC area
+Enumeration<AbstractButton> sscAreaButtons = sscArea.getElements();
+while (sscAreaButtons.hasMoreElements()) {
+    AbstractButton button = sscAreaButtons.nextElement();
+    if (button.getText().equals(ffi.getSscArea())) {
+        button.setSelected(true);
+        break;
+    }
+}
+
+sscHallTicketField.setText(ffi.getSscHallticketNumber());
+sscPassingMonthField.setText(ffi.getSscMonth());
+sscPassYearField.setText(ffi.getSscYearOfPassing());
+class1.setSelectedItem(ffi.getClass1());
+class2.setSelectedItem(ffi.getClass2());
+class3.setSelectedItem(ffi.getClass3());
+class4.setSelectedItem(ffi.getClass4());
+class5.setSelectedItem(ffi.getClass5());
+class6.setSelectedItem(ffi.getClass6());
+class7.setSelectedItem(ffi.getClass7());
+class8.setSelectedItem(ffi.getClass8());
+class9.setSelectedItem(ffi.getClass9());
+class10.setSelectedItem(ffi.getClass10());
+inter1stYear.setSelectedItem(ffi.getInterClass1());
+inter2ndYear.setSelectedItem(ffi.getInterClass2());
+localAreaField.setSelectedItem(ffi.getLocalArea());
+
+// Set the selected local area
+Enumeration<AbstractButton> localAreaButtons = localArea.getElements();
+while (localAreaButtons.hasMoreElements()) {
+    AbstractButton button = localAreaButtons.nextElement();
+    if (button.getText().equals(ffi.getSelectLocalArea())) {
+        button.setSelected(true);
+        break;
+    }
+}
+
+streamAppliedField.setText(ffi.getStreamApplied());
+zone1.setSelectedItem(ffi.getTestZone1());
+zone2.setSelectedItem(ffi.getTestZone2());
+zone3.setSelectedItem(ffi.getTestZone3());
+
+                }
+                else{
+                    System.out.println("No data found");
+                }
+                
+}
+                catch(SQLException e){
+                    e.printStackTrace();
+                    
+                }
+               
+    }
+    
+    
     public void setStudentData(FillFormInitial ffi){
 //      ffi.setCandidateName();
         ffi.setFatherName(fatherNameField.getText());
@@ -3978,9 +4368,7 @@ public class FillOnlineApplication extends javax.swing.JFrame {
                         break;
                     }
                 }
-          
-          
-             buttons = weakerSection.getElements();
+            buttons = weakerSection.getElements();
             while (buttons.hasMoreElements()) {
                     AbstractButton button = buttons.nextElement();
                     if (button.isSelected()) {
@@ -4149,18 +4537,12 @@ public class FillOnlineApplication extends javax.swing.JFrame {
           }
       }
     }
-    SaveApplicationForm saveApplicationForm =null;
+        SaveApplicationForm saveApplicationForm =null;
       FillFormInitial ffi=null;
       public void setFillFormInitialReference(FillFormInitial ffi){
           this.ffi = ffi;
       }
       
-      
-//      public String getSelectedRadio(ButtonGroup bg){
-//          for(AbstractButton ab : bg.getElements()){
-//              if(ab.isSelected())
-//          }
-//      }
 
       
       
